@@ -1,0 +1,48 @@
+# Ignore Lazy's plugin directory
+lazy-lock.json
+plugin/
+
+# Ignore compiled Lua files
+*.lua.c
+
+# Ignore logs
+*.log
+
+# Ignore LunarVim's cache directory
+.cache/
+
+# Ignore LunarVim's undo directory
+undo/
+
+# Ignore LunarVim's swap files
+*.swp
+
+# Ignore LunarVim's backup files
+*.bak
+
+# Ignore LunarVim's session files
+Session.vim
+
+# Ignore LunarVim's view files
+view/
+
+# Ignore LunarVim's temporary files
+*~
+
+# Ignore machine-specific files
+.luarc.json
+
+# Ignore Neovim's shada file (shared data)
+shada/
+
+# Ignore any local overrides
+config.local.lua
+
+# Ignore Mason's package installation directory
+mason/
+
+# Ignore LSP specific files
+.lsp-settings/
+
+# Ignore spell files (if you don't want to share your personal dictionary)
+spell/
