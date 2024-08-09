@@ -12,6 +12,7 @@ lvim.format_on_save.enabled = true
 lvim.builtin.indentlines.active = false
 lvim.builtin.nvimtree.setup.view.side = "right"
 
+
 -- * VIM VIM OPTIONS
 require("user.options")
 
