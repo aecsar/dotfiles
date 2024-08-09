@@ -6,7 +6,7 @@ vim.cmd("set linebreak")
 vim.cmd("set nofoldenable")
 
 vim.opt.fillchars:append { eob = " " }
-vim.opt.fillchars = { vert = " " }
+-- vim.opt.fillchars = { vert = " " }
 
 local opts = { noremap = true, silent = true }
 

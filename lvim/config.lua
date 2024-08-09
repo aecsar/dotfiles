@@ -11,6 +11,7 @@ lvim.colorscheme = "catppuccin-macchiato"
 lvim.format_on_save.enabled = true
 lvim.builtin.indentlines.active = false
 lvim.builtin.nvimtree.setup.view.side = "right"
+lvim.transparent_window = true
 
 
 -- * VIM VIM OPTIONS
