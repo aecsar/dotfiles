@@ -6,13 +6,14 @@
 
 -- * GENERAL CONFIG
 
+lvim.transparent_window = true
 lvim.colorscheme = "catppuccin-macchiato"
 
 lvim.format_on_save.enabled = true
-lvim.builtin.indentlines.active = false
 lvim.builtin.nvimtree.setup.view.side = "right"
-lvim.transparent_window = true
 
+lvim.builtin.illuminate.active = false
+lvim.builtin.indentlines.active = false
 
 -- * VIM VIM OPTIONS
 require("user.options")

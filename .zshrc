@@ -1,6 +1,5 @@
 eval "$(starship init zsh)"
 
-
 lvim() {
   if [[ "$1" == "." ]]; then
     command lvim

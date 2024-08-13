@@ -8,6 +8,33 @@ lvim.plugins = {
       -- options
     },
   },
+  {
+    "lukas-reineke/virt-column.nvim",
+    opts = {
+      char = { "┆" },
+      virtcolumn = "130",
+      highlight = { "NonText" },
+    }
+  },
+  {
+    "folke/twilight.nvim",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  },
+  {
+    "mawkler/modicator.nvim",
+    dependencies = "scottmckendry/cyberdream.nvim",
+    init = function()
+      -- These are required for Modicator to work
+      vim.o.cursorline = false
+      vim.o.number = true
+      vim.o.termguicolors = true
+    end,
+    opts = {},
+  },
   -- {
   --   "folke/noice.nvim",
   --   event = "VeryLazy",
@@ -176,25 +203,25 @@ lvim.plugins = {
     -- yay -S glow
     -- build = "yay -S glow"
   },
-  {
-    "karb94/neoscroll.nvim",
-    event = "WinScrolled",
-    config = function()
-      require('neoscroll').setup({
-        -- All these keys will be mapped to their corresponding default scrolling animation
-        mappings = { '<C-u>', '<C-d>', '<C-b>', '<C-f>',
-          '<C-y>', '<C-e>', 'zt', 'zz', 'zb' },
-        hide_cursor = true,          -- Hide cursor while scrolling
-        stop_eof = true,             -- Stop at <EOF> when scrolling downwards
-        use_local_scrolloff = false, -- Use the local scope of scrolloff instead of the global scope
-        respect_scrolloff = false,   -- Stop scrolling when the cursor reaches the scrolloff margin of the file
-        cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
-        easing_function = nil,       -- Default easing function
-        pre_hook = nil,              -- Function to run before the scrolling animation starts
-        post_hook = nil,             -- Function to run after the scrolling animation ends
-      })
-    end
-  },
+  -- {
+  --   "karb94/neoscroll.nvim",
+  --   event = "WinScrolled",
+  --   config = function()
+  --     require('neoscroll').setup({
+  --       -- All these keys will be mapped to their corresponding default scrolling animation
+  --       mappings = { '<C-u>', '<C-d>', '<C-b>', '<C-f>',
+  --         '<C-y>', '<C-e>', 'zt', 'zz', 'zb' },
+  --       hide_cursor = true,          -- Hide cursor while scrolling
+  --       stop_eof = true,             -- Stop at <EOF> when scrolling downwards
+  --       use_local_scrolloff = false, -- Use the local scope of scrolloff instead of the global scope
+  --       respect_scrolloff = false,   -- Stop scrolling when the cursor reaches the scrolloff margin of the file
+  --       cursor_scrolls_alone = true, -- The cursor will keep on scrolling even if the window cannot scroll further
+  --       easing_function = nil,       -- Default easing function
+  --       pre_hook = nil,              -- Function to run before the scrolling animation starts
+  --       post_hook = nil,             -- Function to run after the scrolling animation ends
+  --     })
+  --   end
+  -- },
   {
     "folke/todo-comments.nvim",
     event = "BufRead",
@@ -214,6 +241,70 @@ lvim.plugins = {
       vim.api.nvim_command("autocmd InsertLeave * let b:cursorword = 1")
       vim.api.nvim_command("augroup END")
     end
+  },
+  {
+    "folke/trouble.nvim",
+    opts = {
+      -- settings without a patched font or icons
+      -- icons = false,
+      -- fold_open = "v",      -- icon used for open folds
+      -- fold_closed = ">",    -- icon used for closed folds
+      -- indent_lines = false, -- add an indent guide below the fold icons
+      -- signs = {
+      --   -- icons / text used for a diagnostic
+      --   error = "E",
+      --   warning = "W",
+      --   hint = "H",
+      --   information = "I",
+      -- },
+      -- use_diagnostic_signs = false, -- enabling this will use the signs defined in your lsp client
+    },
+  },
+  {
+    "AckslD/nvim-neoclip.lua",
+    -- lazy = false,
+    dependencies = {
+      -- you'll need at least one of these
+      { 'kkharji/sqlite.lua',           module = 'sqlite' },
+      { 'nvim-telescope/telescope.nvim' },
+      -- {'ibhagwan/fzf-lua'},
+    },
+    config = function()
+      require('neoclip').setup({
+        -- enable_persistent_history = true,
+      })
+    end,
+  },
+  {
+    "stevearc/conform.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      local conf = require("conform")
+
+      conf.setup({
+        log_level = vim.log.levels.DEBUG,
+        formatters_by_ft = {
+          lua = { "stylua" },
+          typescript = { "prettierd", "prettier" },
+          typescriptreact = { "prettierd", "prettier" },
+          javascript = { "prettierd", "prettier" },
+          javascriptreact = { "prettierd", "prettier" },
+          go = { "goimports", "gofmt" },
+
+          ["*"] = { "codespell" },
+          -- Use the "_" filetype to run formatters on filetypes that don't
+          -- have other formatters configured.
+          ["_"] = { "trim_whitespace" },
+        },
+      })
+
+      vim.api.nvim_create_autocmd("BufWritePre", {
+        pattern = "*",
+        callback = function(args)
+          require("conform").format({ bufnr = args.buf, lsp_fallback = true })
+        end,
+      })
+    end,
   },
   {
     "wakatime/vim-wakatime",

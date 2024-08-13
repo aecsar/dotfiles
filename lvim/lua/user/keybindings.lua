@@ -4,6 +4,10 @@ lvim.builtin.which_key.mappings["t"] = {
   "<cmd>ToggleTerm direction=float<CR>", "Toggle floating terminal"
 }
 
+lvim.builtin.which_key.mappings["P"] = {
+  "<cmd>Telescope neoclip<CR>", "Clipboard history"
+}
+
 -- lvim.builtin.which_key.mappings["s"] = {
 --   name = "Surround",
 --   s = {
