@@ -114,6 +114,13 @@ lvim.plugins = {
 
   -- Code
   {
+    "smjonas/inc-rename.nvim",
+    config = function()
+      require("inc_rename").setup()
+    end,
+  },
+  -- { "jwalton512/vim-blade" },
+  {
     "windwp/nvim-ts-autotag",
     config = function()
       require("nvim-ts-autotag").setup()

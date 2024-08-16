@@ -8,6 +8,16 @@ lvim.builtin.which_key.mappings["P"] = {
   "<cmd>Telescope neoclip<CR>", "Clipboard history"
 }
 
+-- vim.keymap.set("n", "<leader>rn", ":IncRename ")
+
+-- vim.keymap.set("n", "<leader>rn", function()
+--   return ":IncRename " .. vim.fn.expand("<cword>")
+-- end, { expr = true })
+
+lvim.builtin.which_key.mappings["r"] = {
+  "<cmd>IncRename<CR>", "Incremental rename"
+}
+
 -- lvim.builtin.which_key.mappings["s"] = {
 --   name = "Surround",
 --   s = {
