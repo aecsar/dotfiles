@@ -8,6 +8,12 @@ lvim() {
   fi
 }
 
+alias cna="bun create next-app@latest --tailwind --eslint --ts --app --src-dir --import-alias '~/*' --empty --use-bun"
+alias gaa="git add --all"
+alias gc="git commit -m"
+alias gp="git push"
+alias glo="git log --oneline"
+
 alias pn="pnpm"
 alias nvim="lvim"
 alias kaseeji="lvim ~/code/hustle/kaseeji/"

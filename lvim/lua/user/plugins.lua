@@ -84,7 +84,7 @@ lvim.plugins = {
     priority = 1000,
     opts = {},
   },
-  { "catppuccin/nvim",   name = "catppuccin", priority = 1000 },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {
     "kevinhwang91/nvim-bqf",
     event = { "BufRead", "BufNew" },
@@ -143,7 +143,7 @@ lvim.plugins = {
   {
     "mrjones2014/nvim-ts-rainbow",
   },
-  { "github/copilot.vim" },
+  -- { "github/copilot.vim" },
 
   -- {
   --   "zbirenbaum/copilot-cmp",
@@ -319,17 +319,17 @@ lvim.plugins = {
   },
 }
 
-table.insert(lvim.plugins, {
-  "zbirenbaum/copilot-cmp",
-  event = "InsertEnter",
-  dependencies = { "zbirenbaum/copilot.lua" },
-  config = function()
-    vim.defer_fn(function()
-      require("copilot").setup()     -- https://github.com/zbirenbaum/copilot.lua/blob/master/README.md#setup-and-configuration
-      require("copilot_cmp").setup() -- https://github.com/zbirenbaum/copilot-cmp/blob/master/README.md#configuration
-    end, 100)
-  end,
-})
+-- table.insert(lvim.plugins, {
+--   "zbirenbaum/copilot-cmp",
+--   event = "InsertEnter",
+--   dependencies = { "zbirenbaum/copilot.lua" },
+--   config = function()
+--     vim.defer_fn(function()
+--       require("copilot").setup()     -- https://github.com/zbirenbaum/copilot.lua/blob/master/README.md#setup-and-configuration
+--       require("copilot_cmp").setup() -- https://github.com/zbirenbaum/copilot-cmp/blob/master/README.md#configuration
+--     end, 100)
+--   end,
+-- })
 
 -- lvim.lsp.on_attach_callback = function(client, bufnr)
 --   require "lsp_signature".on_attach()
