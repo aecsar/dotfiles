@@ -20,7 +20,7 @@
 		"dock": "right",
 		"indent_size": 10
 	},
-	"vim_mode": false,
+	"vim_mode": true,
 	"telemetry": {
 		"diagnostics": false,
 		"metrics": false
@@ -46,7 +46,7 @@
 	"buffer_font_size": 15.5,
 	"theme": {
 		"mode": "system",
-		"light": "Catppuccin Latte",
-		"dark": "Summercamp"
+		"light": "Catppuccin Macchiato",
+		"dark": "Ayu Dark"
 	}
 }

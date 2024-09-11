@@ -12,10 +12,14 @@ alias cna="bun create next-app@latest --tailwind --eslint --ts --app --src-dir -
 alias gaa="git add --all"
 alias gc="git commit -m"
 alias gp="git push"
+alias gs="git status"
+alias c="clear"
+alias e="exit"
 alias glo="git log --oneline"
+alias bd="bun dev"
 
 alias pn="pnpm"
-alias nvim="lvim"
+# alias nvim="lvim"
 alias kaseeji="lvim ~/code/hustle/kaseeji/"
 alias sma="lvim ~/code/work/sma/shopmeaway/"
 
