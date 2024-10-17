@@ -18,6 +18,17 @@ lvim.builtin.which_key.mappings["r"] = {
   "<cmd>IncRename<CR>", "Incremental rename"
 }
 
+lvim.builtin.which_key.mappings["g"]["a"] = {
+  name = "Manage git merge conflict (git-conflict)",
+  o = { "<cmd>GitConflictChooseOurs<CR>", "Select the current changes" },
+  t = { "<cmd>GitConflictChooseTheirs<CR>", "Select the incoming changes" },
+  b = { "<cmd>GitConflictChooseBoth<CR>", "Select both changes" },
+  N = { "<cmd>GitConflictChooseNone<CR>", "Select none of the changes" },
+  n = { "<cmd>GitConflictNextConflict<CR>", "Move to the next conflict" },
+  p = { "<cmd>GitConflictPrevConflict<CR>", "Move to the previous conflict" },
+  l = { "<cmd>GitConflictListQf<CR>", "Get all conflict to quickfix" },
+}
+
 -- lvim.builtin.which_key.mappings["s"] = {
 --   name = "Surround",
 --   s = {

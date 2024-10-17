@@ -84,7 +84,7 @@ lvim.plugins = {
     priority = 1000,
     opts = {},
   },
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "catppuccin/nvim",           name = "catppuccin", priority = 1000 },
   {
     "kevinhwang91/nvim-bqf",
     event = { "BufRead", "BufNew" },
@@ -113,6 +113,17 @@ lvim.plugins = {
   },
 
   -- Code
+  {
+    'neoclide/coc.nvim',
+    build = 'npm ci'
+  }, -- used with deno
+  { 'akinsho/git-conflict.nvim', version = "*",       config = true },
+  -- {
+  --   'jayli/vim-easycomplete',
+  --   dependencies = {
+  --     'SirVer/ultisnips'
+  --   }
+  -- },
   {
     "smjonas/inc-rename.nvim",
     config = function()
@@ -266,6 +277,20 @@ lvim.plugins = {
       -- },
       -- use_diagnostic_signs = false, -- enabling this will use the signs defined in your lsp client
     },
+  },
+  {
+    "itchyny/vim-cursorword",
+    enabled = false,
+    event = { "BufEnter", "BufNewFile" },
+    config = function()
+      vim.api.nvim_command("augroup user_plugin_cursorword")
+      vim.api.nvim_command("autocmd!")
+      vim.api.nvim_command("autocmd FileType NvimTree,lspsagafinder,dashboard,vista let b:cursorword = 0")
+      vim.api.nvim_command("autocmd WinEnter * if &diff || &pvw | let b:cursorword = 0 | endif")
+      vim.api.nvim_command("autocmd InsertEnter * let b:cursorword = 0")
+      vim.api.nvim_command("autocmd InsertLeave * let b:cursorword = 1")
+      vim.api.nvim_command("augroup END")
+    end
   },
   {
     "AckslD/nvim-neoclip.lua",

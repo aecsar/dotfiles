@@ -6,14 +6,15 @@
 
 -- * GENERAL CONFIG
 
-lvim.transparent_window = true
-lvim.colorscheme = "catppuccin-macchiato"
+-- lvim.transparent_window = true
+lvim.colorscheme = "carbonfox"
 
 lvim.format_on_save.enabled = true
 lvim.builtin.nvimtree.setup.view.side = "right"
 
-lvim.builtin.illuminate.active = false
 lvim.builtin.indentlines.active = false
+-- lvim.builtin.indentlines.options.show_current_context = false
+lvim.builtin.telescope.theme = "center"
 
 -- * VIM VIM OPTIONS
 require("user.options")
@@ -23,3 +24,15 @@ require("user.keybindings")
 
 -- * PLUGINS
 require("user.plugins")
+
+-- require 'lspconfig'.denols.setup {}
+-- local nvim_lsp = require('lspconfig')
+-- nvim_lsp.denols.setup {
+--   on_attach = on_attach,
+--   root_dir = nvim_lsp.util.root_pattern("deno.json", "deno.jsonc"),
+-- }
+
+-- -- display deno code fences
+-- vim.g.markdown_fenced_languages = {
+--   "ts=typescript"
+-- }
