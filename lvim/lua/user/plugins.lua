@@ -84,7 +84,7 @@ lvim.plugins = {
     priority = 1000,
     opts = {},
   },
-  { "catppuccin/nvim",           name = "catppuccin", priority = 1000 },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {
     "kevinhwang91/nvim-bqf",
     event = { "BufRead", "BufNew" },
@@ -113,11 +113,12 @@ lvim.plugins = {
   },
 
   -- Code
+  { 'sbdchd/neoformat' },
   {
     'neoclide/coc.nvim',
     build = 'npm ci'
   }, -- used with deno
-  { 'akinsho/git-conflict.nvim', version = "*",       config = true },
+  { 'akinsho/git-conflict.nvim', version = "*", config = true },
   -- {
   --   'jayli/vim-easycomplete',
   --   dependencies = {

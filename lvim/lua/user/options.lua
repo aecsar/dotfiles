@@ -6,6 +6,12 @@ vim.cmd("set wrap")
 vim.cmd("set showbreak=↪")
 vim.cmd("set linebreak")
 vim.cmd("set nofoldenable")
+-- vim.cmd("autocmd BufWritePre,TextChanged,InsertLeave *.js,*.jsx,*.ts,*.tsx Neoformat")
+
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+  pattern = { "*.js", "*.jsx", "*.ts", "*.tsx" },
+  command = "Neoformat"
+})
 
 vim.opt.fillchars:append { eob = " " }
 -- vim.opt.fillchars = { vert = " " }
