@@ -7,7 +7,7 @@
 -- * GENERAL CONFIG
 
 -- lvim.transparent_window = true
-lvim.colorscheme = "carbonfox"
+lvim.colorscheme = "tokyonight-night"
 
 lvim.format_on_save.enabled = true
 lvim.builtin.nvimtree.setup.view.side = "right"
@@ -15,6 +15,11 @@ lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.builtin.indentlines.active = false
 -- lvim.builtin.indentlines.options.show_current_context = false
 lvim.builtin.telescope.theme = "center"
+
+-- require("mason").setup()
+-- require("mason-lspconfig").setup {
+--   ensure_installed = { "lua_ls", "rust_analyzer", "gopls" },
+-- }
 
 -- * VIM VIM OPTIONS
 require("user.options")

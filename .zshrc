@@ -19,8 +19,8 @@ lvim() {
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-export PATH="$HOME/tools/flutter/bin/:$PATH"
-export PATH="/Users/aecsar/.local/bin:$PATH"
+export PATH="$HOME/tools/flutter/bin/:$HOME/tools/go-tasks/:$PATH"
+export PATH="/Users/aecsar/.local/bin:$HOME/go/bin:$PATH"
 
 alias cna="bun create next-app@latest --tailwind --eslint --ts --app --src-dir --import-alias '~/*' --empty --use-bun"
 alias gaa="git add --all"
@@ -37,7 +37,7 @@ alias pn="pnpm"
 alias pnx="pnpm exec"
 alias pnd="pnpm dlx"
 
-alias sma="cd code/work/sma/shopmeaway"
+alias sma="cd ~/code/work/sma/shopmeaway"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -18,10 +18,23 @@
 		"dock": "right"
 	},
 	"project_panel": {
+		"indent_guides": {
+			"show": "never"
+		},
 		"dock": "right",
-		"indent_size": 10
+		"indent_size": 20
 	},
-	"vim_mode": false,
+	// Override theme cursor selection color (tokyonight theme)
+	"experimental.theme_overrides": {
+		"players": [
+			{
+				"cursor": "#5ac1feff",
+				"background": "#5ac1feff",
+				"selection": "#6f7bb644"
+			}
+		]
+	},
+	"vim_mode": true,
 	"telemetry": {
 		"diagnostics": false,
 		"metrics": false
@@ -41,7 +54,10 @@
 	},
 	"terminal": {
 		"font_family": "JetBrainsMono Nerd Font",
-		"font_size": 14
+		"font_size": 14,
+		"font_features": {
+			"calt": true
+		}
 	},
 	"buffer_font_family": "JetBrainsMono Nerd Font",
 	"hard_tabs": true,
@@ -50,12 +66,12 @@
 	"ui_font_size": 16,
 	"show_whitespaces": "boundary",
 	"buffer_font_features": {
-		"calt": false
+		"calt": true
 	},
 	"buffer_font_size": 15.5,
 	"theme": {
 		"mode": "system",
-		"light": "Catppuccin Macchiato",
-		"dark": "Andromeda"
+		"light": "Oh Lucy",
+		"dark": "Tokyo Night"
 	}
 }

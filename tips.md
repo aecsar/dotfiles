@@ -1,6 +1,7 @@
 # Neovim tips and tricks
 
 - Use gx to open a link under the cursor in your browser
+- Use gl to open a lsp error message in a new window
 
 # New computer setup
 

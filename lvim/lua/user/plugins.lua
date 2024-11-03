@@ -2,6 +2,7 @@
 
 lvim.plugins = {
   -- Theme & UI
+  { "Yazeed1s/oh-lucy.nvim" },
   {
     "j-hui/fidget.nvim",
     opts = {
@@ -85,34 +86,39 @@ lvim.plugins = {
     opts = {},
   },
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  {
-    "kevinhwang91/nvim-bqf",
-    event = { "BufRead", "BufNew" },
-    config = function()
-      require("bqf").setup({
-        auto_enable = true,
-        preview = {
-          win_height = 12,
-          win_vheight = 12,
-          delay_syntax = 80,
-          border_chars = { "┃", "┃", "━", "━", "┏", "┓", "┗", "┛", "█" },
-        },
-        func_map = {
-          vsplit = "",
-          ptogglemode = "z,",
-          stoggleup = "",
-        },
-        filter = {
-          fzf = {
-            action_for = { ["ctrl-s"] = "split" },
-            extra_opts = { "--bind", "ctrl-o:toggle-all", "--prompt", "> " },
-          },
-        },
-      })
-    end,
-  },
+  -- {
+  --   "kevinhwang91/nvim-bqf",
+  --   event = { "BufRead", "BufNew" },
+  --   config = function()
+  --     require("bqf").setup({
+  --       auto_enable = true,
+  --       preview = {
+  --         win_height = 12,
+  --         win_vheight = 12,
+  --         delay_syntax = 80,
+  --         border_chars = { "┃", "┃", "━", "━", "┏", "┓", "┗", "┛", "█" },
+  --       },
+  --       func_map = {
+  --         vsplit = "",
+  --         ptogglemode = "z,",
+  --         stoggleup = "",
+  --       },
+  --       filter = {
+  --         fzf = {
+  --           action_for = { ["ctrl-s"] = "split" },
+  --           extra_opts = { "--bind", "ctrl-o:toggle-all", "--prompt", "> " },
+  --         },
+  --       },
+  --     })
+  --   end,
+  -- },
 
   -- Code
+  -- {
+  --   "williamboman/mason.nvim",
+  --   "williamboman/mason-lspconfig.nvim",
+  --   "neovim/nvim-lspconfig",
+  -- },
   { 'sbdchd/neoformat' },
   {
     'neoclide/coc.nvim',
