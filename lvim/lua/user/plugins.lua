@@ -86,6 +86,7 @@ lvim.plugins = {
     opts = {},
   },
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  -- TODO : Replace by folke/trouble if needed
   -- {
   --   "kevinhwang91/nvim-bqf",
   --   event = { "BufRead", "BufNew" },
@@ -119,7 +120,27 @@ lvim.plugins = {
   --   "williamboman/mason-lspconfig.nvim",
   --   "neovim/nvim-lspconfig",
   -- },
+
+  -- Tmux
+  {
+    "christoomey/vim-tmux-navigator",
+    cmd = {
+      "TmuxNavigateLeft",
+      "TmuxNavigateDown",
+      "TmuxNavigateUp",
+      "TmuxNavigateRight",
+      "TmuxNavigatePrevious",
+    },
+    keys = {
+      { "<c-h>",  "<cmd><C-U>TmuxNavigateLeft<cr>" },
+      { "<c-j>",  "<cmd><C-U>TmuxNavigateDown<cr>" },
+      { "<c-k>",  "<cmd><C-U>TmuxNavigateUp<cr>" },
+      { "<c-l>",  "<cmd><C-U>TmuxNavigateRight<cr>" },
+      { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+    },
+  },
   { 'sbdchd/neoformat' },
+
   {
     'neoclide/coc.nvim',
     build = 'npm ci'

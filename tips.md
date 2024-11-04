@@ -5,6 +5,12 @@
 
 # New computer setup
 
+### Install tmux tpm plugins
+```bash
+
+tmux run '~/.tmux/plugins/tpm/tpm'
+```
+
 ### Install mongodb
 
 Installation [guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/)
