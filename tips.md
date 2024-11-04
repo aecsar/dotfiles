@@ -58,6 +58,9 @@ cargo install kanata
 # copy the kanata configuration file
 sudo cp ./dev.moustapha.kanata.plist /Library/LaunchDaemons/
 
+# Give kanata the authorizations
+echo "$(whoami) ALL=(ALL) NOPASSWD: /Users/aecsar/.cargo/bin/kanata" | sudo tee "/etc/sudoers.d/kanata" >/dev/null
+
 # Once copied over, you can then load it using sudo
 
 sudo launchctl load /Library/LaunchDaemons/dev.moustapha.kanata.plist
@@ -76,3 +79,5 @@ You may forcefully exit kanata by pressing lctl+spc+esc at any time
 Current mappings :
     - A : left-super, S : left-alt, D : left-shift, F : left-ctrl
     - Mirrored on the right part
+
+Troubleshooting : https://www.reddit.com/r/ErgoMechKeyboards/comments/1fojvif/comment/lv8z7iu/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
