@@ -9,7 +9,7 @@
     <array>
         <string>/Users/aecsar/.cargo/bin/kanata</string>
         <string>-c</string>
-        <string>/Users/aecsar/.dotfiles/.config/kanata/kanata.kbd</string>
+        <string>/Users/aecsar/dotfiles/kanata.kbd</string>
     </array>
 
     <key>RunAtLoad</key>
