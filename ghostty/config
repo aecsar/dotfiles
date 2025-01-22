@@ -1,0 +1,16 @@
+font-family = "JetBrainsMono Nerd Font Mono"
+font-size = 14
+
+theme = light:ayu_light,dark:tokyonight
+
+background-opacity = 0.92
+background-blur-radius = 30
+
+# title = " "
+
+window-title-font-family = "GeistMono Nerd Font Mono"
+
+window-height = 50
+window-width = 200
+
+window-save-state = always

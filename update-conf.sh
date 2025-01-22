@@ -9,7 +9,12 @@ if [ ! -d "./zed" ]; then
     mkdir ./zed
 fi
 
+if [ ! -d "./ghostty" ]; then
+  mkdir ./ghostty
+fi
+
 cp ~/.config/zed/settings.json ~/dotfiles/zed/settings.json
+cp ~/.config/ghostty/config ~/dotfiles/ghostty/config
 
 if [ ! -d "./tmux" ]; then
     mkdir ./tmux
