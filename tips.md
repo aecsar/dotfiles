@@ -58,6 +58,9 @@ Dreams Of Code installation guide repo : https://github.com/dreamsofcode-io/home
 For macOs, don't forget do download the `Karabiner VirtualHiDDevice Driver` (see on the kanata docs)
 
 ```bash
+# Tip
+# You can set the kanata.kbd file type to "lisp" (i.e. nvim : set filetype=lisp)
+
 # install kanata with cargo
 cargo install kanata
 
