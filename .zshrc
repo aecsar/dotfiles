@@ -20,7 +20,7 @@ lvim() {
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/tools/flutter/bin/:$HOME/tools/go-tasks/:$PATH"
-export PATH="/Users/aecsar/.local/bin:$HOME/go/bin:$PATH"
+export PATH="/Users/aecsar/.local/bin:$HOME/go/bin:/usr/local/Cellar/openvpn/2.6.13/sbin:$PATH"
 
 alias cna="bun create next-app@latest --tailwind --eslint --ts --app --src-dir --import-alias '~/*' --empty --use-bun"
 alias gaa="git add --all"
@@ -42,6 +42,15 @@ alias sma="cd ~/code/work/sma/shopmeaway"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if type brew &>/dev/null; then
+ FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+ autoload -Uz compinit
+ compinit
+fi
 
 # pnpm
 export PNPM_HOME="/Users/aecsar/Library/pnpm"

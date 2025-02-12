@@ -3,6 +3,7 @@
 lvim.plugins = {
   -- Theme & UI
   { "Yazeed1s/oh-lucy.nvim" },
+  { 'projekt0n/github-nvim-theme', name = 'github-theme' },
   {
     "j-hui/fidget.nvim",
     opts = {
