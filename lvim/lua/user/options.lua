@@ -2,9 +2,9 @@
 
 -- vim.cmd("set colorcolumn=150")
 vim.cmd("set textwidth=100")
-vim.cmd("set wrap")
-vim.cmd("set showbreak=↪")
-vim.cmd("set linebreak")
+-- vim.cmd("set wrap")
+-- vim.cmd("set showbreak=↪")
+-- vim.cmd("set linebreak")
 vim.cmd("set nofoldenable")
 -- vim.cmd("autocmd BufWritePre,TextChanged,InsertLeave *.js,*.jsx,*.ts,*.tsx Neoformat")
 
@@ -13,7 +13,7 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   command = "Neoformat"
 })
 
-vim.opt.fillchars:append { eob = " " }
+-- vim.opt.fillchars:append { eob = " " }
 -- vim.opt.fillchars = { vert = " " }
 
 local opts = { noremap = true, silent = true }
