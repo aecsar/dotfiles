@@ -3,6 +3,7 @@ echo "Updating config..."
 cp ~/.zshrc ~/dotfiles/.zshrc
 
 cp -r ~/.config/lvim .
+cp -r ~/.config/nvim .
 cp -r ~/.config/kitty .
 
 if [ ! -d "./zed" ]; then

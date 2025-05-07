@@ -1,6 +1,4 @@
--- * PLUGINS CONFIGURATION
-
-lvim.plugins = {
+return {
   -- AI Integrations
   -- {
   --   "yetone/avante.nvim",
@@ -64,29 +62,29 @@ lvim.plugins = {
   -- },
 
   -- Theme & UI
-  {
-    "sphamba/smear-cursor.nvim",
-
-    opts = {
-      -- Smear cursor when switching buffers or windows.
-      smear_between_buffers = true,
-
-      -- Smear cursor when moving within line or to neighbor lines.
-      -- Use `min_horizontal_distance_smear` and `min_vertical_distance_smear` for finer control
-      smear_between_neighbor_lines = true,
-
-      -- Draw the smear in buffer space instead of screen space when scrolling
-      scroll_buffer_space = true,
-
-      -- Set to `true` if your font supports legacy computing symbols (block unicode symbols).
-      -- Smears will blend better on all backgrounds.
-      legacy_computing_symbols_support = false,
-
-      -- Smear cursor in insert mode.
-      -- See also `vertical_bar_cursor_insert_mode` and `distance_stop_animating_vertical_bar`.
-      smear_insert_mode = true,
-    },
-  },
+  -- {
+  --   "sphamba/smear-cursor.nvim",
+  --
+  --   opts = {
+  --     -- Smear cursor when switching buffers or windows.
+  --     smear_between_buffers = true,
+  --
+  --     -- Smear cursor when moving within line or to neighbor lines.
+  --     -- Use `min_horizontal_distance_smear` and `min_vertical_distance_smear` for finer control
+  --     smear_between_neighbor_lines = true,
+  --
+  --     -- Draw the smear in buffer space instead of screen space when scrolling
+  --     scroll_buffer_space = true,
+  --
+  --     -- Set to `true` if your font supports legacy computing symbols (block unicode symbols).
+  --     -- Smears will blend better on all backgrounds.
+  --     legacy_computing_symbols_support = false,
+  --
+  --     -- Smear cursor in insert mode.
+  --     -- See also `vertical_bar_cursor_insert_mode` and `distance_stop_animating_vertical_bar`.
+  --     smear_insert_mode = true,
+  --   },
+  -- },
   { "Yazeed1s/oh-lucy.nvim" },
   -- {
   --   'mcauley-penney/visual-whitespace.nvim',
@@ -94,7 +92,7 @@ lvim.plugins = {
   --   event = "ModeChanged *:[vV\22]", -- optionally, lazy load on entering visual mode
   --   opts = {},
   -- },
-  { 'projekt0n/github-nvim-theme', name = 'github-theme' },
+  { "projekt0n/github-nvim-theme", name = "github-theme" },
   {
     "j-hui/fidget.nvim",
     opts = {
@@ -107,7 +105,7 @@ lvim.plugins = {
       char = { "┆" },
       virtcolumn = "130",
       highlight = { "NonText" },
-    }
+    },
   },
   {
     "folke/twilight.nvim",
@@ -115,7 +113,7 @@ lvim.plugins = {
       -- your configuration comes here
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
-    }
+    },
   },
   {
     "mawkler/modicator.nvim",
@@ -143,29 +141,29 @@ lvim.plugins = {
   --     "rcarriga/nvim-notify",
   --   }
   -- },
-  {
-    "echasnovski/mini.icons",
-    lazy = true,
-    opts = {
-      file = {
-        [".keep"] = { glyph = "󰊢", hl = "MiniIconsGrey" },
-        ["devcontainer.json"] = { glyph = "", hl = "MiniIconsAzure" },
-      },
-      filetype = {
-        dotenv = { glyph = "", hl = "MiniIconsYellow" },
-      },
-    },
-    init = function()
-      package.preload["nvim-web-devicons"] = function()
-        require("mini.icons").mock_nvim_web_devicons()
-        return package.loaded["nvim-web-devicons"]
-      end
-    end,
-  },
-  { 'ayu-theme/ayu-vim' },
-  { "rose-pine/neovim",             name = "rose-pine" },
+  -- {
+  --   "echasnovski/mini.icons",
+  --   lazy = true,
+  --   opts = {
+  --     file = {
+  --       [".keep"] = { glyph = "󰊢", hl = "MiniIconsGrey" },
+  --       ["devcontainer.json"] = { glyph = "", hl = "MiniIconsAzure" },
+  --     },
+  --     filetype = {
+  --       dotenv = { glyph = "", hl = "MiniIconsYellow" },
+  --     },
+  --   },
+  --   init = function()
+  --     package.preload["nvim-web-devicons"] = function()
+  --       require("mini.icons").mock_nvim_web_devicons()
+  --       return package.loaded["nvim-web-devicons"]
+  --     end
+  --   end,
+  -- },
+  { "ayu-theme/ayu-vim" },
+  { "rose-pine/neovim", name = "rose-pine" },
   { "EdenEast/nightfox.nvim" },
-  { 'drewtempelmeyer/palenight.vim' },
+  { "drewtempelmeyer/palenight.vim" },
   {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
@@ -224,20 +222,18 @@ lvim.plugins = {
       "TmuxNavigatePrevious",
     },
     keys = {
-      { "<c-h>",  "<cmd><C-U>TmuxNavigateLeft<cr>" },
-      { "<c-j>",  "<cmd><C-U>TmuxNavigateDown<cr>" },
-      { "<c-k>",  "<cmd><C-U>TmuxNavigateUp<cr>" },
-      { "<c-l>",  "<cmd><C-U>TmuxNavigateRight<cr>" },
+      { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
+      { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
+      { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
+      { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
   },
-  { 'sbdchd/neoformat' },
-
   {
-    'neoclide/coc.nvim',
-    build = 'npm ci'
+    "neoclide/coc.nvim",
+    build = "npm ci",
   }, -- used with deno
-  { 'akinsho/git-conflict.nvim', version = "*", config = true },
+  { "akinsho/git-conflict.nvim", version = "*", config = true },
   -- {
   --   'jayli/vim-easycomplete',
   --   dependencies = {
@@ -262,10 +258,10 @@ lvim.plugins = {
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
-      require("nvim-surround").setup({
+      require("nvim-surround").setup {
         -- Configuration here, or leave empty to use defaults
-      })
-    end
+      }
+    end,
   },
   {
     "JoosepAlviste/nvim-ts-context-commentstring",
@@ -307,24 +303,24 @@ lvim.plugins = {
       require("leap").add_default_mappings()
     end,
   },
+  -- {
+  --   "f-person/git-blame.nvim",
+  --   event = "BufRead",
+  --   config = function()
+  --     vim.cmd "highlight default link gitblame SpecialComment"
+  --     require("gitblame").setup { enabled = false }
+  --   end,
+  -- },
   {
-    "f-person/git-blame.nvim",
-    event = "BufRead",
-    config = function()
-      vim.cmd "highlight default link gitblame SpecialComment"
-      require("gitblame").setup { enabled = false }
-    end,
-  },
-  {
-    'rmagatti/auto-session',
+    "rmagatti/auto-session",
     lazy = false,
     dependencies = {
-      'nvim-telescope/telescope.nvim', -- Only needed if you want to use sesssion lens
+      "nvim-telescope/telescope.nvim", -- Only needed if you want to use session lens
     },
     config = function()
-      require('auto-session').setup({
-        auto_session_suppress_dirs = { '~/', '~/Projects', '~/Downloads', '/' },
-      })
+      require("auto-session").setup {
+        auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
+      }
     end,
   },
   -- {
@@ -335,7 +331,7 @@ lvim.plugins = {
   -- },
   {
     "npxbr/glow.nvim",
-    ft = { "markdown" }
+    ft = { "markdown" },
     -- You must install glow globally
     -- https://github.com/charmbracelet/glow
     -- yay -S glow
@@ -371,14 +367,14 @@ lvim.plugins = {
     "itchyny/vim-cursorword",
     event = { "BufEnter", "BufNewFile" },
     config = function()
-      vim.api.nvim_command("augroup user_plugin_cursorword")
-      vim.api.nvim_command("autocmd!")
-      vim.api.nvim_command("autocmd FileType NvimTree,lspsagafinder,dashboard,vista let b:cursorword = 0")
-      vim.api.nvim_command("autocmd WinEnter * if &diff || &pvw | let b:cursorword = 0 | endif")
-      vim.api.nvim_command("autocmd InsertEnter * let b:cursorword = 0")
-      vim.api.nvim_command("autocmd InsertLeave * let b:cursorword = 1")
-      vim.api.nvim_command("augroup END")
-    end
+      vim.api.nvim_command "augroup user_plugin_cursorword"
+      vim.api.nvim_command "autocmd!"
+      vim.api.nvim_command "autocmd FileType NvimTree,lspsagafinder,dashboard,vista let b:cursorword = 0"
+      vim.api.nvim_command "autocmd WinEnter * if &diff || &pvw | let b:cursorword = 0 | endif"
+      vim.api.nvim_command "autocmd InsertEnter * let b:cursorword = 0"
+      vim.api.nvim_command "autocmd InsertLeave * let b:cursorword = 1"
+      vim.api.nvim_command "augroup END"
+    end,
   },
   {
     "folke/trouble.nvim",
@@ -399,41 +395,27 @@ lvim.plugins = {
     },
   },
   {
-    "itchyny/vim-cursorword",
-    enabled = false,
-    event = { "BufEnter", "BufNewFile" },
-    config = function()
-      vim.api.nvim_command("augroup user_plugin_cursorword")
-      vim.api.nvim_command("autocmd!")
-      vim.api.nvim_command("autocmd FileType NvimTree,lspsagafinder,dashboard,vista let b:cursorword = 0")
-      vim.api.nvim_command("autocmd WinEnter * if &diff || &pvw | let b:cursorword = 0 | endif")
-      vim.api.nvim_command("autocmd InsertEnter * let b:cursorword = 0")
-      vim.api.nvim_command("autocmd InsertLeave * let b:cursorword = 1")
-      vim.api.nvim_command("augroup END")
-    end
-  },
-  {
     "AckslD/nvim-neoclip.lua",
     -- lazy = false,
     dependencies = {
       -- you'll need at least one of these
-      { 'kkharji/sqlite.lua',           module = 'sqlite' },
-      { 'nvim-telescope/telescope.nvim' },
+      { "kkharji/sqlite.lua", module = "sqlite" },
+      { "nvim-telescope/telescope.nvim" },
       -- {'ibhagwan/fzf-lua'},
     },
     config = function()
-      require('neoclip').setup({
+      require("neoclip").setup {
         -- enable_persistent_history = true,
-      })
+      }
     end,
   },
   {
     "stevearc/conform.nvim",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
-      local conf = require("conform")
+      local conf = require "conform"
 
-      conf.setup({
+      conf.setup {
         log_level = vim.log.levels.DEBUG,
         formatters_by_ft = {
           lua = { "stylua" },
@@ -443,17 +425,18 @@ lvim.plugins = {
           javascriptreact = { "prettierd", "prettier" },
           go = { "goimports", "gofmt" },
 
-          ["*"] = { "codespell" },
+          -- ["*"] = { "codespell" },
+
           -- Use the "_" filetype to run formatters on filetypes that don't
           -- have other formatters configured.
           ["_"] = { "trim_whitespace" },
         },
-      })
+      }
 
       vim.api.nvim_create_autocmd("BufWritePre", {
         pattern = "*",
         callback = function(args)
-          require("conform").format({ bufnr = args.buf, lsp_fallback = true })
+          require("conform").format { bufnr = args.buf, lsp_fallback = true }
         end,
       })
     end,
@@ -463,19 +446,3 @@ lvim.plugins = {
     lazy = false,
   },
 }
-
--- table.insert(lvim.plugins, {
---   "zbirenbaum/copilot-cmp",
---   event = "InsertEnter",
---   dependencies = { "zbirenbaum/copilot.lua" },
---   config = function()
---     vim.defer_fn(function()
---       require("copilot").setup()     -- https://github.com/zbirenbaum/copilot.lua/blob/master/README.md#setup-and-configuration
---       require("copilot_cmp").setup() -- https://github.com/zbirenbaum/copilot-cmp/blob/master/README.md#configuration
---     end, 100)
---   end,
--- })
-
--- lvim.lsp.on_attach_callback = function(client, bufnr)
---   require "lsp_signature".on_attach()
--- end

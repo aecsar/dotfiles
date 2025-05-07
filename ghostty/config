@@ -1,4 +1,4 @@
-font-family = "JetBrainsMono Nerd Font Mono Medium"
+font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 16
 
 theme = light:tokyonight,dark:tokyonight
@@ -14,3 +14,4 @@ window-height = 50
 window-width = 200
 
 window-save-state = always
+macos-option-as-alt = left

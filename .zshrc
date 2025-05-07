@@ -1,5 +1,3 @@
-# Add deno completions to search path
-if [[ ":$FPATH:" != *":/Users/aecsar/.zsh/completions:"* ]]; then export FPATH="/Users/aecsar/.zsh/completions:$FPATH"; fi
 eval "$(starship init zsh)"
 source <(fzf --zsh)
 
@@ -21,6 +19,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/tools/flutter/bin/:$HOME/tools/go-tasks/:$PATH"
 export PATH="/Users/aecsar/.local/bin:$HOME/go/bin:/usr/local/Cellar/openvpn/2.6.13/sbin:$PATH"
+export PATH=/Users/ameer/.local/bin:$PATH
 
 alias cna="bun create next-app@latest --tailwind --eslint --ts --app --src-dir --import-alias '~/*' --empty --use-bun"
 alias gaa="git add --all"
@@ -31,7 +30,7 @@ alias c="clear"
 alias e="exit"
 alias glo="git log --oneline"
 alias bd="bun dev"
-alias nvim="lvim"
+#alias nvim="lvim"
 
 alias pn="pnpm"
 alias pnx="pnpm exec"
@@ -40,17 +39,11 @@ alias pnd="pnpm dlx"
 alias sma="cd ~/code/work/sma/shopmeaway"
 
 export NVM_DIR="$HOME/.nvm"
+
+export ANDROID_HOME=/Users/ameer/Library/Android/sdk
+
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-if type brew &>/dev/null; then
- FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
- autoload -Uz compinit
- compinit
-fi
 
 # pnpm
 export PNPM_HOME="/Users/aecsar/Library/pnpm"
@@ -59,4 +52,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-. "/Users/aecsar/.deno/env"
+
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
