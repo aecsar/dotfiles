@@ -55,3 +55,6 @@ esac
 
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Added by Windsurf
+export PATH="/Users/ameer/.codeium/windsurf/bin:$PATH"

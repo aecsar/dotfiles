@@ -34,7 +34,7 @@
 	// 		}
 	// 	]
 	// },
-	"vim_mode": false,
+	"vim_mode": true,
 	"telemetry": {
 		"diagnostics": false,
 		"metrics": false
@@ -71,7 +71,7 @@
 	"buffer_font_size": 15.5,
 	"theme": {
 		"mode": "system",
-		"light": "Github Dark",
-		"dark": "Vercel Dark"
+		"light": "Summercamp",
+		"dark": "Summercamp"
 	}
 }
