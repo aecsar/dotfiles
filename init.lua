@@ -6,7 +6,7 @@ vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
-vim.g.transparent_background = true
+vim.g.transparent_background = false
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -290,7 +290,7 @@ require('lazy').setup({
   },
 })
 
-vim.cmd 'colorscheme cyberdream'
+vim.cmd 'colorscheme catppuccin-mocha'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
