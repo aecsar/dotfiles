@@ -5,7 +5,7 @@ return {
     priority = 1000,
     opts = {
       term_colors = true,
-      transparent_background = true,
+      -- transparent_background = true,
       dim_inactive = {
         enabled = false, -- dims the background color of inactive window
         shade = 'dark',
@@ -16,6 +16,7 @@ return {
         gitsigns = true,
         treesitter = true,
         harpoon = true,
+        neotree = true,
         telescope = true,
         mason = true,
         noice = true,
