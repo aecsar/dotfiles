@@ -34,6 +34,13 @@ return {
       desc = 'Debug: Start/Continue',
     },
     {
+      '<leader>dS',
+      function()
+        require('dap').disconnect()
+      end,
+      desc = 'Debug: Disconnect',
+    },
+    {
       '<leader>di',
       function()
         require('dap').step_into()
@@ -60,6 +67,13 @@ return {
         require('dap').toggle_breakpoint()
       end,
       desc = 'Debug: Toggle Breakpoint',
+    },
+    {
+      '<leader>dr',
+      function()
+        require('dap').clear_breakpoints()
+      end,
+      desc = 'Debug: Clear Breakpoints',
     },
     {
       '<leader>dB',

@@ -28,7 +28,11 @@ return {
           --   end,
           -- },
         },
-        opts = {},
+        opts = {
+          ui = {
+            border = 'rounded',
+          },
+        },
       },
       'folke/lazydev.nvim',
     },
