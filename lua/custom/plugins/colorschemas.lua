@@ -47,11 +47,6 @@ return {
         },
       },
     },
-
-    config = function(_, opts)
-      require('catppuccin').setup(opts)
-      vim.cmd.colorscheme 'catppuccin-mocha'
-    end,
   },
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
@@ -64,13 +59,18 @@ return {
 
     'folke/tokyonight.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
-    config = function()
-      ---@diagnostic disable-next-line: missing-fields
-      require('tokyonight').setup {
-        styles = {
-          -- comments = { italic = false }, -- Disable italics in comments
-        },
-      }
-    end,
+  },
+  {
+    'scottmckendry/cyberdream.nvim',
+    priority = 1000,
+  },
+  {
+    'tiagovla/tokyodark.nvim',
+    priority = 1000,
+  },
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine',
+    priority = 1000,
   },
 }
