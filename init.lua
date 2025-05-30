@@ -64,8 +64,8 @@ vim.o.splitbelow = true
 --   and `:help lua-options-guide`
 vim.o.list = true
 
--- vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
-vim.opt.listchars = { tab = '→→', trail = '·', nbsp = '␣' }
+-- vim.opt.listchars = { tab = '» →', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = '->', trail = '·', nbsp = '␣' }
 vim.o.tabstop = 2
 
 -- Preview substitutions live, as you type!
