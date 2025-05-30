@@ -67,6 +67,13 @@ vim.o.list = true
 -- vim.opt.listchars = { tab = '» →', trail = '·', nbsp = '␣' }
 vim.opt.listchars = { tab = '->', trail = '·', nbsp = '␣' }
 vim.o.tabstop = 2
+vim.opt.fillchars = vim.opt.fillchars
+  + {
+    eob = ' ', -- No ~ at the end of the buffer
+    fold = ' ', -- No ~ in folds
+    diff = '╱', -- Use a slash for diff
+    vert = '│', -- Use a vertical line for vertical splits
+  }
 
 -- Preview substitutions live, as you type!
 vim.o.inccommand = 'split'
