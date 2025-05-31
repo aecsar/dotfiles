@@ -50,6 +50,9 @@ Installation [guide](https://www.mongodb.com/docs/manual/tutorial/install-mongod
 ```
 
 ### Install kanata for keyboard home row setups
+
+Ignore, follow this instead : https://github.com/jtroo/kanata/issues/1264#issuecomment-2763085239
+
 Article : https://precondition.github.io/home-row-mods
 Kanata repo : https://github.com/jtroo/kanata?tab=readme-ov-file
 Context video by dreamsofcode : https://www.youtube.com/watch?v=sLWQ4Gx88h4
