@@ -51,11 +51,21 @@ Installation [guide](https://www.mongodb.com/docs/manual/tutorial/install-mongod
 
 ### Install kanata for keyboard home row setups
 
-Ignore, follow this instead : https://github.com/jtroo/kanata/issues/1264#issuecomment-2763085239
+Ignore, follow this instead :
+
+https://github.com/jtroo/kanata/issues/1264#issuecomment-2763085239 and
+https://github.com/jtroo/kanata/discussions/1537
+
+also, make sure to rename username in the .kanata.plist file to your own username
+
+---------------
 
 Article : https://precondition.github.io/home-row-mods
+
 Kanata repo : https://github.com/jtroo/kanata?tab=readme-ov-file
+
 Context video by dreamsofcode : https://www.youtube.com/watch?v=sLWQ4Gx88h4
+
 Dreams Of Code installation guide repo : https://github.com/dreamsofcode-io/home-row-mods/tree/main/kanata/macos
 
 For macOs, don't forget do download the `Karabiner VirtualHiDDevice Driver` (see on the kanata docs)
@@ -86,6 +96,8 @@ Now, kanata should be running whenever your macbook starts up!
 
 sudo kanata -c kanata.kbd
 ```
+------------
+
 You may forcefully exit kanata by pressing lctl+spc+esc at any time
 
 Current mappings :

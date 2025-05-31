@@ -7,9 +7,9 @@
 
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/aecsar/.cargo/bin/kanata</string>
+        <string>/Users/ameer/.cargo/bin/kanata</string>
         <string>-c</string>
-        <string>/Users/aecsar/dotfiles/kanata.kbd</string>
+        <string>/Users/ameer/dotfiles/kanata.kbd</string>
     </array>
 
     <key>RunAtLoad</key>
