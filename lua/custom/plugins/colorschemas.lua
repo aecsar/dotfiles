@@ -89,4 +89,18 @@ return {
       },
     },
   },
+  {
+    'ricardoraposo/nightwolf.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {
+      {
+        theme = 'black', -- 'black', 'dark-blue', 'gray', 'dark-gray', 'light'
+        italic = true,
+        transparency = vim.g.transparent_background,
+        palette_overrides = {},
+        highlight_overrides = {},
+      },
+    },
+  },
 }
