@@ -63,44 +63,44 @@ return {
       transparent = vim.g.transparent_background,
     },
   },
-  {
-    'scottmckendry/cyberdream.nvim',
-    priority = 1000,
-    opts = {
-      transparent = vim.g.transparent_background,
-    },
-  },
-  {
-    'tiagovla/tokyodark.nvim',
-    priority = 1000,
-    opts = {
-      transparent_background = vim.g.transparent_background,
-    },
-  },
-  {
-    'rose-pine/neovim',
-    name = 'rose-pine',
-    priority = 1000,
-    opts = {
-      styles = {
-        -- bold = true,
-        -- italic = true,
-        transparency = vim.g.transparent_background,
-      },
-    },
-  },
-  {
-    'ricardoraposo/nightwolf.nvim',
-    lazy = false,
-    priority = 1000,
-    opts = {
-      {
-        theme = 'black', -- 'black', 'dark-blue', 'gray', 'dark-gray', 'light'
-        italic = true,
-        transparency = vim.g.transparent_background,
-        palette_overrides = {},
-        highlight_overrides = {},
-      },
-    },
-  },
+  -- {
+  --   'scottmckendry/cyberdream.nvim',
+  --   priority = 1000,
+  --   opts = {
+  --     transparent = vim.g.transparent_background,
+  --   },
+  -- },
+  -- {
+  --   'tiagovla/tokyodark.nvim',
+  --   priority = 1000,
+  --   opts = {
+  --     transparent_background = vim.g.transparent_background,
+  --   },
+  -- },
+  -- {
+  --   'rose-pine/neovim',
+  --   name = 'rose-pine',
+  --   priority = 1000,
+  --   opts = {
+  --     styles = {
+  --       -- bold = true,
+  --       -- italic = true,
+  --       transparency = vim.g.transparent_background,
+  --     },
+  --   },
+  -- },
+  -- {
+  --   'ricardoraposo/nightwolf.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     {
+  --       theme = 'black', -- 'black', 'dark-blue', 'gray', 'dark-gray', 'light'
+  --       italic = true,
+  --       transparency = vim.g.transparent_background,
+  --       palette_overrides = {},
+  --       highlight_overrides = {},
+  --     },
+  --   },
+  -- },
 }
