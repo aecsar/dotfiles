@@ -64,8 +64,8 @@ vim.o.splitbelow = true
 --   and `:help lua-options-guide`
 vim.o.list = true
 
--- vim.opt.listchars = { tab = '» →', trail = '·', nbsp = '␣' }
-vim.opt.listchars = { tab = '->', trail = '·', nbsp = '␣' }
+-- vim.opt.listchars = { tab = '» →', trail = '·', nbsp = '␣', eol = '↩' }
+vim.opt.listchars = { tab = '->', trail = '·', nbsp = '␣', space = '·' }
 vim.o.tabstop = 2
 vim.opt.fillchars = vim.opt.fillchars
   + {
