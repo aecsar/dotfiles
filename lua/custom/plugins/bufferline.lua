@@ -13,6 +13,7 @@ return {
     { '[B', '<cmd>BufferLineMovePrev<cr>', desc = 'Move buffer prev' },
     { ']B', '<cmd>BufferLineMoveNext<cr>', desc = 'Move buffer next' },
     { '<leader>bj', '<Cmd>BufferLinePick<CR>', desc = 'Pick (jump to) buffer' },
+    { '<leader>bd', '<Cmd>bd<CR>', desc = 'Close (delete) buffer' },
   },
   opts = {
     options = {
