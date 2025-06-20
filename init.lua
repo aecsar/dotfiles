@@ -103,6 +103,11 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
+vim.keymap.set('n', '<A-l>', '<C-w>>', { desc = 'Pane increase width' })
+vim.keymap.set('n', '<A-h>', '<C-w><', { desc = 'Pane decrease width' })
+vim.keymap.set('n', '<A-u>', '<C-w>+', { desc = 'Pane decrease height' })
+vim.keymap.set('n', '<A-d>', '<C-w>-', { desc = 'Pane decrease height' })
+
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
