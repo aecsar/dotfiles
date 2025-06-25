@@ -28,6 +28,8 @@ return {
       --   local ret = (diag.error and icons.Error .. diag.error .. ' ' or '') .. (diag.warning and icons.Warn .. diag.warning or '')
       --   return vim.trim(ret)
       -- end,
+      -- separator_style = 'thick',
+      separator_style = { '', '' },
       offsets = {
         {
           filetype = 'neo-tree',
