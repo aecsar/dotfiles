@@ -1,0 +1,26 @@
+font-size = 17
+font-family = SauceCodePro Nerd Font
+
+font-family-bold = SauceCodePro Nerd Font
+font-family-italic = SauceCodePro Nerd Font
+font-family-bold-italic = SauceCodePro Nerd Font
+
+font-style = SemiBold
+font-style-bold = Bold
+font-style-italic = SemiBold Italic
+font-style-bold-italic = Bold Italic
+
+theme = light:tokyonight,dark:tokyonight
+
+# background-opacity = 0.92
+# background-blur-radius = 30
+
+# title = " "
+
+window-height = 50
+window-width = 200
+
+macos-titlebar-style = hidden
+
+window-save-state = always
+macos-option-as-alt = left

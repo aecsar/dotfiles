@@ -9,6 +9,7 @@ return {
         -- BUG: hadolint installed with Mason isn't working
         -- use brew install hadolint instead
         dockerfile = { 'hadolint' },
+        go = { 'golangcilint' },
       }
 
       local lint_augroup = vim.api.nvim_create_augroup('lint', { clear = true })
