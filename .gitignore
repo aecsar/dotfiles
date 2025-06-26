@@ -1,6 +1,6 @@
-tags
-test.sh
-.luarc.json
-nvim
-
-spell/
+/github-copilot/
+/jgit/
+.DS_Store
+/raycast/extensions/
+/tmux/plugins/
+/uv/
