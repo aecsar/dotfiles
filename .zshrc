@@ -1,0 +1,47 @@
+eval "$(starship init zsh)"
+
+# bun completions
+[ -s "/Users/aecsar/.bun/_bun" ] && source "/Users/aecsar/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/tools/flutter/bin/:$HOME/tools/go-tasks/:$PATH"
+export PATH="/Users/aecsar/.local/bin:$HOME/go/bin:/usr/local/Cellar/openvpn/2.6.13/sbin:$PATH"
+export PATH=/Users/ameer/.local/bin:/Users/Shared/DBngin/postgresql/17.0/bin:$PATH
+
+alias cna="bun create next-app@latest --tailwind --eslint --ts --app --src-dir --import-alias '~/*' --empty --use-bun"
+alias gaa="git add --all"
+alias gc="git commit -m"
+alias gp="git push"
+alias gs="git status"
+alias c="clear"
+alias e="exit"
+alias glo="git log --oneline"
+alias bd="bun dev"
+
+alias gotest="go run -mod=mod github.com/rakyll/gotest@latest -v ./..."
+
+alias pn="pnpm"
+alias pnx="pnpm exec"
+alias pnd="pnpm dlx"
+
+alias notes="cd /Users/aecsar/Library/Mobile\ Documents/com~apple~CloudDocs/notes && nvim"
+
+export NVM_DIR="$HOME/.nvm"
+
+export ANDROID_HOME=/Users/ameer/Library/Android/sdk
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="/Users/aecsar/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
