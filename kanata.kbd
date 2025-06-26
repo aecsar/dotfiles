@@ -1,0 +1,43 @@
+;; Kanata config to use homerow mode
+;; Caps to escape/control configuration for Kanata
+
+;; set this filetype as lisp (:set filetype=lisp)
+
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  ;; f1   f2   f3   f4   f5   f6   f7   f8   f9   f10   f11   f12
+  ;; caps
+  a s d f j k l ;
+)
+
+(defvar
+  tap-time 150 ;; for repeating the actual key we're mapping, quick tap and hold to get the old behavior
+  hold-time 200 ;; delay for the hold behavior to occur
+)
+
+;; Definine two aliases, one for esc/control to other for function key
+(defalias
+  ;; escctrl (tap-hold 100 100 esc lctl)
+  a (tap-hold $tap-time $hold-time a lmet)
+  s (tap-hold $tap-time $hold-time s lalt)
+  d (tap-hold $tap-time $hold-time d lsft)
+  f (tap-hold $tap-time $hold-time f lctl)
+  j (tap-hold $tap-time $hold-time j rctl)
+  k (tap-hold $tap-time $hold-time k rsft)
+  l (tap-hold $tap-time $hold-time l ralt)
+  ; (tap-hold $tap-time $hold-time ; rmet)
+)
+
+(deflayer base
+  ;; brdn  brup  _    _    _    _   prev  pp  next  mute  vold  volu
+  ;; @escctrl
+  @a @s @d @f @j @k @l @;
+)
+
+;; (deflayer fn
+;;   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10   f11   f12
+;;   @escctrl _ _ _ _ _ _ _ _
+;; )
