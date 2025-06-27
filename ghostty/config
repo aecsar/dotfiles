@@ -1,10 +1,10 @@
 font-size = 17
-font-family = SauceCodePro Nerd Font
-# font-family = "JetBrainsMono Nerd Font Mono"
+# font-family = SauceCodePro Nerd Font
+font-family = "JetBrainsMono Nerd Font Mono"
 
-font-family-bold = SauceCodePro Nerd Font
-font-family-italic = SauceCodePro Nerd Font
-font-family-bold-italic = SauceCodePro Nerd Font
+# font-family-bold = SauceCodePro Nerd Font
+# font-family-italic = SauceCodePro Nerd Font
+# font-family-bold-italic = SauceCodePro Nerd Font
 
 font-style = SemiBold
 font-style-bold = Bold
@@ -21,7 +21,8 @@ theme = light:tokyonight,dark:tokyonight
 window-height = 50
 window-width = 200
 
-macos-titlebar-style = hidden
+macos-titlebar-style = tabs
+macos-icon = xray
 
 window-save-state = always
 macos-option-as-alt = left
