@@ -45,3 +45,8 @@ esac
 
 source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/aecsar/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
