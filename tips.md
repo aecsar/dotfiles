@@ -2,6 +2,11 @@
 
 - Use gx to open a link under the cursor in your browser
 - Use gl to open a lsp error message in a new window
+- Use gi to go to previous cursor insert position and gv to previous cursor
+visual mode position
+- Use gq to break a long line down to an easier ready format
+- Use <C-a> / <C-x> to increment / decrement word under the cursor
+- Use ZZ to save and quit and ZQ to q!
 
 # New computer setup
 
