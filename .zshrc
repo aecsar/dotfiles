@@ -9,6 +9,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/tools/flutter/bin/:$HOME/tools/go-tasks/:$PATH"
 export PATH="/Users/aecsar/.local/bin:$HOME/go/bin:/usr/local/Cellar/openvpn/2.6.13/sbin:$PATH"
 export PATH=/Users/ameer/.local/bin:/Users/Shared/DBngin/postgresql/17.0/bin:$PATH
+export PATH=/Users/Shared/DBngin/postgresql/17.0/bin:$PATH
 
 alias cna="bun create next-app@latest --tailwind --eslint --ts --app --src-dir --import-alias '~/*' --empty --use-bun"
 alias gaa="git add --all"
