@@ -65,7 +65,7 @@ vim.o.splitbelow = true
 vim.o.list = true
 
 -- vim.opt.listchars = { tab = '» →', trail = '·', nbsp = '␣', eol = '↩' }
-vim.opt.listchars = { tab = '->', trail = '·', nbsp = '␣', space = '·' }
+vim.opt.listchars = { tab = '->', trail = '·', nbsp = '␣' } --  space = '·'
 vim.o.tabstop = 2
 vim.opt.fillchars = vim.opt.fillchars
   + {
@@ -305,7 +305,7 @@ require('lazy').setup({
   },
 })
 
-vim.cmd 'colorscheme tokyonight-night'
+vim.cmd 'colorscheme catppuccin-mocha'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
