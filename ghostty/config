@@ -22,8 +22,17 @@ theme = catppuccin-mocha
 window-height = 50
 window-width = 200
 
-macos-titlebar-style = tabs
+# macos-titlebar-style = tabs
+
+adjust-cursor-thickness = 80%
+
+macos-titlebar-style = hidden
 macos-icon = xray
+
+cursor-text = 000
+cursor-color = FFF
+
+# window-decoration = none # this causes perf issues
 
 window-save-state = always
 macos-option-as-alt = left
