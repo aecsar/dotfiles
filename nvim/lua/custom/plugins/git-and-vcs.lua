@@ -17,4 +17,12 @@ return {
   keys = {
     { '<leader>gg', '<cmd>LazyGit<cr>', desc = 'LazyGit' },
   },
+  {
+    'rbong/vim-flog',
+    lazy = true,
+    cmd = { 'Flog', 'Flogsplit', 'Floggit' },
+    dependencies = {
+      'tpope/vim-fugitive',
+    },
+  },
 }
