@@ -7,8 +7,9 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+	"base_keymap": "VSCode",
 	"soft_wrap": "preferred_line_length",
-	"inline_completions": {
+	"edit_predictions": {
 		"disabled_globs": [".env", ""]
 	},
 	"collaboration_panel": {
@@ -71,7 +72,7 @@
 	"buffer_font_size": 15.5,
 	"theme": {
 		"mode": "system",
-		"light": "Summercamp",
-		"dark": "Summercamp"
+		"light": "Tokyo Night",
+		"dark": "Tokyo Night"
 	}
 }
