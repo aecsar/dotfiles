@@ -7,7 +7,10 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
-	"base_keymap": "VSCode",
+	"features": {
+  "edit_prediction_provider": "copilot"
+ },
+ "base_keymap": "VSCode",
 	"soft_wrap": "preferred_line_length",
 	"edit_predictions": {
 		"disabled_globs": [".env", ""]
@@ -54,7 +57,8 @@
 		"file_icons": true
 	},
 	"terminal": {
-		"font_family": "JetBrainsMono Nerd Font",
+		"dock": "bottom",
+  "font_family": "JetBrainsMono Nerd Font",
 		"font_size": 14,
 		"font_features": {
 			"calt": true
