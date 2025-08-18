@@ -113,3 +113,8 @@ Current mappings :
     - Mirrored on the right part
 
 Troubleshooting : https://www.reddit.com/r/ErgoMechKeyboards/comments/1fojvif/comment/lv8z7iu/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+
+## CLI tools
+ripgrep : better `grep`
+fd : `find` alternative
+zoxide : faster `cd`
