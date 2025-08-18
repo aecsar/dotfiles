@@ -1,4 +1,5 @@
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 # bun completions
 [ -s "/Users/aecsar/.bun/_bun" ] && source "/Users/aecsar/.bun/_bun"
@@ -23,6 +24,7 @@ alias glo="git log --oneline"
 alias bd="bun dev"
 alias start-mongo="~/binaries/mongodb-macos-x86_64-8.0.12/bin/mongod --config ~/mongodb.conf"
 
+alias cd="z"
 
 alias gotest="go run -mod=mod github.com/rakyll/gotest@latest -v ./..."
 
