@@ -4,6 +4,8 @@ eval "$(zoxide init zsh)"
 # bun completions
 [ -s "/Users/aecsar/.bun/_bun" ] && source "/Users/aecsar/.bun/_bun"
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
