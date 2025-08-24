@@ -1,10 +1,19 @@
 [user]
 	name = Moustapha
 	email = hello@moustapha.dev
+; [core]
+; 	pager = diff-so-fancy | less --tabs=4 -RF
+; [interactive]
+; 	diffFilter = diff-so-fancy --patch
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RF
+  pager = delta
 [interactive]
-	diffFilter = diff-so-fancy --patch
+  diffFilter = delta --color-only
+[delta]
+  navigate = true  # use n and N to move between diff sections
+  dark = true      # or light = true, or omit for auto-detection
+[merge]
+  conflictStyle = zdiff3
 [color]
 	ui = true
 [color "diff-highlight"]
