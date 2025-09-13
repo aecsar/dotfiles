@@ -11,7 +11,7 @@ font-style-bold = Bold
 font-style-italic = SemiBold Italic
 font-style-bold-italic = Bold Italic
 
-theme = light:tokyonight_night,dark:tokyonight_night
+theme = light:TokyoNight,dark:TokyoNight
 # theme = catppuccin-mocha
 
 # background-opacity = 0.92
@@ -27,7 +27,7 @@ window-width = 200
 adjust-cursor-thickness = 80%
 
 macos-titlebar-style = hidden
-macos-icon = xray
+# macos-icon = xray
 
 cursor-text = 000
 cursor-color = FFF
