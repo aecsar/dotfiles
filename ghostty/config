@@ -22,12 +22,11 @@ theme = light:TokyoNight,dark:TokyoNight
 window-height = 50
 window-width = 200
 
-# macos-titlebar-style = tabs
+macos-titlebar-style = tabs
+# macos-titlebar-style = hidden
+macos-icon = xray
 
 adjust-cursor-thickness = 80%
-
-macos-titlebar-style = hidden
-# macos-icon = xray
 
 cursor-text = 000
 cursor-color = FFF

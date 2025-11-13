@@ -58,5 +58,5 @@ fpath=(/Users/aecsar/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
-. "/Users/aecsar/.deno/env"
+# . "/Users/aecsar/.deno/env"
 export PATH="/usr/local/opt/go@1.24/bin:$PATH"
