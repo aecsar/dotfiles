@@ -10,6 +10,19 @@ visual mode position
 
 # New computer setup
 
+- Install `brew install stow`
+- Link dotfiles to `~/.config
+```bash
+cd ~/dotfiles
+stow -t ~/.config .
+
+ln -s ~/dotfiles/.zshrc ~/.zshrc
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+
+# Update keyboard repeat rate
+# https://mac-key-repeat.zaymon.dev/
+```
+
 ### Install tmux tpm plugins
 ```bash
 
