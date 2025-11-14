@@ -21,6 +21,8 @@ ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 
 # Update keyboard repeat rate
 # https://mac-key-repeat.zaymon.dev/
+# You'll then need to end current session and login again for
+# changes to take effect
 ```
 
 ### Install tmux tpm plugins
