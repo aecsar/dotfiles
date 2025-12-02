@@ -26,7 +26,7 @@ alias glo="git log --oneline"
 alias bd="bun dev"
 alias start-mongo="~/binaries/mongodb-macos-x86_64-8.0.12/bin/mongod --config ~/mongodb.conf"
 
-alias cd="z"
+# alias cd="z"
 
 alias gotest="go run -mod=mod github.com/rakyll/gotest@latest -v ./..."
 
@@ -59,4 +59,8 @@ autoload -Uz compinit
 compinit
 # End of Docker CLI completions
 # . "/Users/aecsar/.deno/env"
-export PATH="/usr/local/opt/go@1.24/bin:$PATH"
+export PATH="/usr/local/opt/go@1.25/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/aecsar/.antigravity/antigravity/bin:$PATH"
+

@@ -7,76 +7,113 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
-	"features": {
-  "edit_prediction_provider": "copilot"
- },
- "base_keymap": "VSCode",
-	"soft_wrap": "preferred_line_length",
-	"edit_predictions": {
-		"disabled_globs": [".env", ""]
-	},
-	"collaboration_panel": {
-		"dock": "right"
-	},
-	"outline_panel": {
-		"dock": "right"
-	},
-	"project_panel": {
-		"indent_guides": {
-			"show": "never"
-		},
-		"dock": "right",
-		"indent_size": 20
-	},
-	// Override theme cursor selection color (tokyonight theme)
-	// "experimental.theme_overrides": {
-	// 	"players": [
-	// 		{
-	// 			"cursor": "#5ac1feff",
-	// 			"background": "#5ac1feff",
-	// 			"selection": "#6f7bb644"
-	// 		}
-	// 	]
-	// },
-	"vim_mode": true,
-	"telemetry": {
-		"diagnostics": false,
-		"metrics": false
-	},
-	"indent_guides": {
-		"enabled": true,
-		"line_width": 1,
-		"active_line_width": 1,
-		"coloring": "disabled"
-		// "background_coloring": "indent_aware"
-	},
-	// "wrap_guides": [100],
-	"preferred_line_length": 120,
-	"tabs": {
-		"git_status": true,
-		"file_icons": true
-	},
-	"terminal": {
-		"dock": "bottom",
-  "font_family": "JetBrainsMono Nerd Font",
-		"font_size": 14,
-		"font_features": {
-			"calt": true
-		}
-	},
-	"buffer_font_family": "JetBrainsMono Nerd Font",
-	"hard_tabs": true,
-	"tab_size": 2,
-	"autosave": "on_focus_change",
-	"ui_font_size": 16,
-	"show_whitespaces": "boundary",
-	"buffer_font_features": {
-		"calt": true
-	},
-	"buffer_font_size": 15.5,
-	"theme": {
-		"mode": "system",
-		"light": "Tokyo Night",
-		"dark": "Tokyo Night"
-	}
+  "buffer_font_size": 18.0,
+  "buffer_line_height": "comfortable",
+  "preview_tabs": {
+    "enabled": false
+  },
+  "sticky_scroll": {
+    "enabled": false
+  },
+  "minimap": {
+    "show": "never",
+    "max_width_columns": 70
+  },
+  "buffer_font_fallbacks": [
+    "SauceCodePro Nerd Font",
+    "Zed Plex Mono",
+    "Zed Mono Extended",
+    "MonoLisa",
+    "GeistMono Nerd Font Mono",
+    "Menlo",
+    "Monaco",
+    "Courier New",
+    "monospace"
+  ],
+  "file_types": {
+    "tailwindcss": ["*.css"],
+    "dotenv": [".env*"],
+    "javascript": ["*.dbclient-js"],
+    "yaml": ["*.asset", "*.meta", "*.prefab", "*.unity"],
+    "jsonl": ["*.ndjson"],
+    "sql": ["*.sqlbook"]
+  },
+  "auto_indent_on_paste": true,
+  "linked_edits": true,
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "base_keymap": "VSCode",
+  "soft_wrap": "prefer_line",
+  "edit_predictions": {
+    "disabled_globs": [".env", ""]
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "auto_fold_dirs": false,
+    "indent_guides": {
+      "show": "never"
+    },
+    "dock": "right",
+    "indent_size": 20
+  },
+  // Override theme cursor selection color (tokyonight theme)
+  // "experimental.theme_overrides": {
+  // 	"players": [
+  // 		{
+  // 			"cursor": "#5ac1feff",
+  // 			"background": "#5ac1feff",
+  // 			"selection": "#6f7bb644"
+  // 		}
+  // 	]
+  // },
+  "vim_mode": true,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "indent_guides": {
+    "line_width": 1,
+    "active_line_width": 1,
+    "coloring": "disabled"
+    // "background_coloring": "indent_aware"
+  },
+  // "wrap_guides": [100],
+  "preferred_line_length": 120,
+  "tabs": {
+    "git_status": true,
+    "file_icons": true
+  },
+  "terminal": {
+    "font_fallbacks": ["GeistMono Nerd Font Mono", "CaskaydiaCove Nerd Font", "MonoLisa"],
+    "env": {
+      "Q_NEW_SESSION": "\"1\"",
+      "CW_NEW_SESSION": "\"1\""
+    },
+    "dock": "bottom",
+    "font_family": "JetBrainsMono Nerd Font Mono",
+    "font_size": 16.0,
+    "font_features": {
+      "calt": true
+    }
+  },
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "tab_size": 2,
+  "autosave": "off",
+  "ui_font_size": 16,
+  "show_whitespaces": "boundary",
+  "buffer_font_features": {
+    "calt": true
+  },
+  "theme": "Github Dark"
 }
