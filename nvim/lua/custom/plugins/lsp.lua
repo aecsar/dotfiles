@@ -340,4 +340,21 @@ return {
     'JoosepAlviste/nvim-ts-context-commentstring',
     event = 'BufRead',
   },
+  {
+    'edolphin-ydf/goimpl.nvim',
+    requires = {
+      { 'nvim-telescope/telescope.nvim' },
+      { 'nvim-treesitter/nvim-treesitter' },
+    },
+    config = function()
+      require('telescope').load_extension 'goimpl'
+    end,
+    keys = {
+      {
+        '<leader>gi',
+        "<cmd>lua require'telescope'.extensions.goimpl.goimpl{}<CR>",
+        desc = 'Go Impl',
+      },
+    },
+  },
 }
