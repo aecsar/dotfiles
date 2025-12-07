@@ -213,6 +213,7 @@ return {
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
+        postgres_lsp = {},
 
         lua_ls = {
           -- cmd = { ... },
@@ -260,6 +261,7 @@ return {
         'tailwindcss-language-server',
         'typescript-language-server',
         'dockerfile-language-server',
+        'postgres-language-server',
         'docker-compose-language-service',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
