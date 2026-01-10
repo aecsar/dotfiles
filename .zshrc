@@ -64,3 +64,7 @@ export PATH="/usr/local/opt/go@1.25/bin:$PATH"
 # Added by Antigravity
 export PATH="/Users/aecsar/.antigravity/antigravity/bin:$PATH"
 
+setopt ignoreeof
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/aecsar/Library/Application Support/Herd/config/php/84/"
