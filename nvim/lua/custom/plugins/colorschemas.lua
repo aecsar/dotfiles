@@ -112,4 +112,5 @@ return {
   {
     'ayu-theme/ayu-vim',
   },
+  { 'projekt0n/github-nvim-theme', name = 'github-theme' },
 }
