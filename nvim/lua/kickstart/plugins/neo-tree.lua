@@ -11,10 +11,17 @@ return {
   },
   lazy = false,
   keys = {
-    { '<leader>e', ':Neotree reveal float<CR>', desc = 'NeoTree reveal', silent = true },
+    { '<leader>e', ':Neotree current<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
     filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,
+        hide_gitignored = false,
+        hide_by_name = {
+          '.git',
+        },
+      },
       window = {
         mappings = {
           ['<leader>e'] = 'close_window',
