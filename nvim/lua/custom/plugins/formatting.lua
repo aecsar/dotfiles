@@ -31,7 +31,7 @@ return {
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        go = { 'goimports', 'gofmt', 'golines' }, -- '', -- had some perf issues on some files with golines
+        go = { 'goimports', 'gofmt' }, -- 'golines', -- had some perf issues on some files with golines
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
 
