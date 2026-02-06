@@ -1,7 +1,14 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "tui": {
+    "scroll_speed": 3,
+  },
   "keybinds": {
     "messages_half_page_up": "ctrl+u",
     "messages_half_page_down": "ctrl+d"
+  },
+  "permission": {
+    "bash": "ask",
+    "external_directory": "ask"
   }
 }
