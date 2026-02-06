@@ -25,6 +25,9 @@ alias e="exit"
 alias glo="git log --oneline"
 alias bd="bun dev"
 alias start-mongo="~/binaries/mongodb-macos-x86_64-8.0.12/bin/mongod --config ~/mongodb.conf"
+alias emacs="~/.config/emacs/bin/doom emacs -nw"
+
+export EDITOR="nvim"
 
 # alias cd="z"
 
