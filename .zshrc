@@ -27,6 +27,16 @@ alias bd="bun dev"
 alias start-mongo="~/binaries/mongodb-macos-x86_64-8.0.12/bin/mongod --config ~/mongodb.conf"
 alias emacs="~/.config/emacs/bin/doom emacs -nw"
 
+bun() {
+  if [[ "$1" == "test" ]]; then
+    command bun run test "${@:2}"
+  elif [[ "$1" == "build" ]]; then
+    command bun run build "${@:2}"
+  else
+    command bun "$@"
+  fi
+}
+
 export EDITOR="nvim"
 
 # alias cd="z"
