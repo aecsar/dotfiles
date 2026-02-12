@@ -7,7 +7,8 @@ return {
   config = function()
     require('diffview').setup {
       diff_binaries = false,
-      enhanced_diff_hl = false, -- Set up hihglights in the hooks instead
+      -- enhanced_diff_hl = false, -- Set up hihglights in the hooks instead
+      enhanced_diff_hl = true,
       git_cmd = { 'git' },
       hg_cmd = { 'chg' },
       use_icons = true,
@@ -81,24 +82,25 @@ return {
           -- Turn off cursor line for diffview windows because of bg conflict
           -- https://github.com/neovim/neovim/issues/9800
           vim.wo[winid].culopt = 'number'
-          -- Highlight 'DiffChange' as 'DiffDelete' on the left, and 'DiffAdd' on
-          -- the right.
-          if ctx.layout_name:match '^diff2' then
-            if ctx.symbol == 'a' then
-              vim.opt_local.winhl = table.concat({
-                'DiffAdd:DiffviewDiffAddAsDelete',
-                'DiffDelete:DiffviewDiffDelete',
-                'DiffChange:DiffAddAsDelete',
-                'DiffText:DiffDeleteText',
-              }, ',')
-            elseif ctx.symbol == 'b' then
-              vim.opt_local.winhl = table.concat({
-                'DiffDelete:DiffviewDiffDelete',
-                'DiffChange:DiffAdd',
-                'DiffText:DiffAddText',
-              }, ',')
-            end
-          end
+
+          -- -- Highlight 'DiffChange' as 'DiffDelete' on the left, and 'DiffAdd' on
+          -- -- the right.
+          -- if ctx.layout_name:match '^diff2' then
+          --   if ctx.symbol == 'a' then
+          --     vim.opt_local.winhl = table.concat({
+          --       'DiffAdd:DiffviewDiffAddAsDelete',
+          --       'DiffDelete:DiffviewDiffDelete',
+          --       'DiffChange:DiffAddAsDelete',
+          --       'DiffText:DiffDeleteText',
+          --     }, ',')
+          --   elseif ctx.symbol == 'b' then
+          --     vim.opt_local.winhl = table.concat({
+          --       'DiffDelete:DiffviewDiffDelete',
+          --       'DiffChange:DiffAdd',
+          --       'DiffText:DiffAddText',
+          --     }, ',')
+          --   end
+          -- end
         end,
       },
     }
