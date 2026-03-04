@@ -246,18 +246,21 @@ return {
       -- for you, so that they are available from within Neovim.
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
+        'astro-language-server',
+        'eslint-lsp',
+        'rust-analyzer',
+        'svelte-language-server',
         'stylua', -- Used to format Lua code
         'delve',
         'emmet-language-server',
         'goimports',
-        -- 'golangci-lint',
-        -- 'golangci-lint-langserver',
-        -- 'golines',
+        'golangci-lint',
+        'golangci-lint-langserver',
+        'golines',
         'gopls',
         'lua-language-server',
         'prettier',
         'prettierd',
-        'stylua',
         'tailwindcss-language-server',
         'typescript-language-server',
         'dockerfile-language-server',
