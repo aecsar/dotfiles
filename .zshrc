@@ -6,6 +6,10 @@ eval "$(zoxide init zsh)"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
+if [ -f "$HOME/.zshrc.local" ]; then
+  source "$HOME/.zshrc.local"
+fi
+
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
@@ -26,6 +30,7 @@ alias glo="git log --oneline"
 alias bd="bun dev"
 alias start-mongo="~/binaries/mongodb-macos-x86_64-8.0.12/bin/mongod --config ~/mongodb.conf"
 alias emacs="~/.config/emacs/bin/doom emacs -nw"
+alias tunnel-ngrok='ngrok http ${PORT:-3000} --url $NGROK_DOMAIN'
 
 bun() {
   if [[ "$1" == "test" ]]; then
