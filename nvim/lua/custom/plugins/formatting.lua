@@ -47,4 +47,15 @@ return {
       },
     },
   },
+  {
+    'kylechui/nvim-surround',
+    version = '^4.0.0', -- Use for stability; omit to use `main` branch for the latest features
+    event = 'VeryLazy',
+    config = function()
+      -- 1. Initialize the plugin (REQUIRED for it to work)
+      require('nvim-surround').setup {
+        -- You can leave this empty for default settings
+      }
+    end,
+  },
 }
