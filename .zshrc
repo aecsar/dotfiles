@@ -86,3 +86,4 @@ setopt ignoreeof
 
 # Herd injected PHP 8.4 configuration.
 export HERD_PHP_84_INI_SCAN_DIR="/Users/aecsar/Library/Application Support/Herd/config/php/84/"
+export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
