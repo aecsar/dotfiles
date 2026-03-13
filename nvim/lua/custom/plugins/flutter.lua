@@ -3,6 +3,9 @@ return {
     'akinsho/flutter-tools.nvim',
     dependencies = { 'nvim-lua/plenary.nvim', 'stevearc/dressing.nvim' },
     config = function()
+      -- This jumps to the log if it exists, or opens it if it doesn't
+      vim.keymap.set('n', '<leader>fl', '<cmd>FlutterLogToggle<cr>', { desc = 'Toggle Flutter Log' })
+
       require('flutter-tools').setup {
         -- (uncomment below line for windows only)
         -- flutter_path = "home/flutter/bin/flutter.bat",
@@ -16,6 +19,7 @@ return {
               type = 'executable',
               command = vim.fn.stdpath 'data' .. '/mason/bin/dart-debug-adapter',
               args = { 'flutter' },
+              -- args = { 'debug_adapter' },
             }
 
             require('dap').configurations.dart = {
@@ -23,8 +27,8 @@ return {
                 type = 'dart',
                 request = 'launch',
                 name = 'Launch flutter',
-                dartSdkPath = 'home/flutter/bin/cache/dart-sdk/',
-                flutterSdkPath = 'home/flutter',
+                dartSdkPath = '$HOME/tools/flutter/bin/cache/dart-sdk/',
+                flutterSdkPath = '$HOME/tools/flutter',
                 program = '${workspaceFolder}/lib/main.dart',
                 cwd = '${workspaceFolder}',
               },
