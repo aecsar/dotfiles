@@ -40,7 +40,7 @@ return {
         typescript = { 'prettierd', 'prettier', stop_after_first = true },
         javascriptreact = { 'prettierd', 'prettier', stop_after_first = true },
         typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
-        svelte = { 'prettierd', 'prettier', stop_after_first = true },
+        svelte = { 'prettier-plugin-svelte' },
         css = { 'prettierd', 'prettier', stop_after_first = true },
         rust = { 'rustfmt' },
         -- json = { 'prettierd', 'prettier', stop_after_first = true },
