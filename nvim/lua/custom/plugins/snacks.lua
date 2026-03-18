@@ -167,14 +167,14 @@ return {
       },
       -- gh
       {
-        '<leader>gi',
+        '<leader>ghi',
         function()
           Snacks.picker.gh_issue()
         end,
         desc = 'GitHub Issues (open)',
       },
       {
-        '<leader>gI',
+        '<leader>ghI',
         function()
           Snacks.picker.gh_issue { state = 'all' }
         end,
