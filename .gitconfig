@@ -7,6 +7,7 @@
 ; 	diffFilter = diff-so-fancy --patch
 [core]
   pager = delta
+	ignoreCase = false
 [interactive]
   diffFilter = delta --color-only
 [delta]
