@@ -151,13 +151,13 @@ return {
       --   end,
       --   desc = 'Git Stash',
       -- },
-      {
-        '<leader>gd',
-        function()
-          Snacks.picker.git_diff()
-        end,
-        desc = 'Git Diff (Hunks)',
-      },
+      -- {
+      --   '<leader>gd',
+      --   function()
+      --     Snacks.picker.git_diff()
+      --   end,
+      --   desc = 'Git Diff (Hunks)',
+      -- },
       {
         '<leader>gf',
         function()
@@ -209,13 +209,13 @@ return {
         end,
         desc = 'Grep Open Buffers',
       },
-      {
-        '<leader>sg',
-        function()
-          Snacks.picker.grep()
-        end,
-        desc = 'Grep',
-      },
+      -- {
+      --   '<leader>sg',
+      --   function()
+      --     Snacks.picker.grep()
+      --   end,
+      --   desc = 'Grep',
+      -- },
       {
         '<leader>sw',
         function()
@@ -373,35 +373,35 @@ return {
         desc = 'Colorschemes',
       },
       -- LSP
-      {
-        'gd',
-        function()
-          Snacks.picker.lsp_definitions()
-        end,
-        desc = 'Goto Definition',
-      },
-      {
-        'gD',
-        function()
-          Snacks.picker.lsp_declarations()
-        end,
-        desc = 'Goto Declaration',
-      },
-      {
-        'gr',
-        function()
-          Snacks.picker.lsp_references()
-        end,
-        nowait = true,
-        desc = 'References',
-      },
-      {
-        'gI',
-        function()
-          Snacks.picker.lsp_implementations()
-        end,
-        desc = 'Goto Implementation',
-      },
+      -- {
+      --   'gd',
+      --   function()
+      --     Snacks.picker.lsp_definitions()
+      --   end,
+      --   desc = 'Goto Definition',
+      -- },
+      -- {
+      --   'gD',
+      --   function()
+      --     Snacks.picker.lsp_declarations()
+      --   end,
+      --   desc = 'Goto Declaration',
+      -- },
+      -- {
+      --   'gr',
+      --   function()
+      --     Snacks.picker.lsp_references()
+      --   end,
+      --   nowait = true,
+      --   desc = 'References',
+      -- },
+      -- {
+      --   'gI',
+      --   function()
+      --     Snacks.picker.lsp_implementations()
+      --   end,
+      --   desc = 'Goto Implementation',
+      -- },
       {
         'gy',
         function()
