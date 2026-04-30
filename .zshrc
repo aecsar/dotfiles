@@ -18,6 +18,8 @@ export PATH="$HOME/tools/flutter/bin/:$HOME/tools/go-tasks/:$PATH"
 export PATH="/Users/aecsar/.local/bin:$HOME/go/bin:/usr/local/Cellar/openvpn/2.6.13/sbin:$PATH"
 export PATH=/Users/aecsar/.local/bin:/Users/Shared/DBngin/postgresql/17.0/bin:$PATH
 export PATH=/Users/Shared/DBngin/postgresql/17.0/bin:$PATH
+export PATH=$PATH:/Users/aecsar/.config/composer/vendor/bin/
+export PATH=/usr/local/share/google-cloud-sdk/bin:"$PATH"
 
 alias cna="bun create next-app@latest --tailwind --eslint --ts --app --src-dir --import-alias '~/*' --empty --use-bun"
 alias gaa="git add --all"
