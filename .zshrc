@@ -33,6 +33,7 @@ alias bd="bun dev"
 alias start-mongo="~/binaries/mongodb-macos-x86_64-8.0.12/bin/mongod --config ~/mongodb.conf"
 alias emacs="~/.config/emacs/bin/doom emacs -nw"
 alias tunnel-ngrok='ngrok http ${PORT:-3000} --url $NGROK_DOMAIN'
+alias k="kubectl"
 
 bun() {
   if [[ "$1" == "test" ]]; then
