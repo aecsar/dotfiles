@@ -15,9 +15,10 @@ visual mode position
 ```bash
 cd ~/dotfiles
 stow -t ~/.config .
+stow -t ~ git
 
-ln -s ~/dotfiles/.zshrc ~/.zshrc
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+# ln -s ~/dotfiles/.zshrc ~/.zshrc
+# ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 
 # Update keyboard repeat rate
 # https://mac-key-repeat.zaymon.dev/
