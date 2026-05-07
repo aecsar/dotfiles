@@ -305,6 +305,15 @@ require('lazy').setup({
   },
 })
 
+vim.api.nvim_create_autocmd('FileType', {
+  callback = function()
+    local ok = pcall(vim.treesitter.start)
+    if not ok then
+      return
+    end
+  end,
+})
+
 vim.cmd 'colorscheme tokyonight-night'
 -- vim.cmd 'colorscheme catppuccin-mocha'
 
