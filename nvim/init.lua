@@ -314,7 +314,8 @@ vim.api.nvim_create_autocmd('FileType', {
   end,
 })
 
-vim.cmd 'colorscheme tokyonight-night'
+vim.cmd 'colorscheme rose-pine-main'
+-- vim.cmd 'colorscheme tokyonight-night'
 -- vim.cmd 'colorscheme catppuccin-mocha'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
