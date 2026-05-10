@@ -7,15 +7,21 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "ui_font_family": "SF Pro",
   "agent": {
-    "dock": "right",
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-haiku-4-5",
+      "enable_thinking": false
+    },
+    "dock": "left",
     "favorite_models": [],
     "model_parameters": []
   },
   "git_panel": {
     "dock": "left"
   },
-  "buffer_font_size": 15.0,
+  "buffer_font_size": 15.5,
   "buffer_line_height": "comfortable",
   "preview_tabs": {
     "enabled": false,
@@ -101,17 +107,17 @@
       "calt": true,
     },
   },
-  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "buffer_font_family": "Maple Mono NF",
   "tab_size": 2,
   "autosave": "off",
-  "ui_font_size": 16,
+  "ui_font_size": 15.0,
   "show_whitespaces": "boundary",
   "buffer_font_features": {
     "calt": true,
   },
   "theme": {
-    "mode": "dark",
-    "light": "Rosé Pine",
-    "dark": "Rosé Pine",
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Tokyo Night",
   },
 }
