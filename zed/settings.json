@@ -7,6 +7,10 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "inlay_hints": {
+    "show_background": true,
+    "enabled": true
+  },
   "ui_font_family": "SF Pro",
   "agent": {
     "default_model": {
@@ -21,7 +25,7 @@
   "git_panel": {
     "dock": "left"
   },
-  "buffer_font_size": 15.5,
+  "buffer_font_size": 17.0,
   "buffer_line_height": "comfortable",
   "preview_tabs": {
     "enabled": false,
@@ -117,7 +121,7 @@
   },
   "theme": {
     "mode": "system",
-    "light": "Ayu Light",
+    "light": "Tokyo Night",
     "dark": "Tokyo Night",
   },
 }
