@@ -182,14 +182,14 @@ return {
         desc = 'GitHub Issues (all)',
       },
       {
-        '<leader>gp',
+        '<leader>gk',
         function()
           Snacks.picker.gh_pr()
         end,
         desc = 'GitHub Pull Requests (open)',
       },
       {
-        '<leader>gP',
+        '<leader>gK',
         function()
           Snacks.picker.gh_pr { state = 'all' }
         end,
