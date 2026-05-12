@@ -42,4 +42,29 @@ function bun
 end
 
 # Paths
-fish_add_path /home/aecsar/go/bin
+set -x BUN_INSTALL "$HOME/.bun"
+fish_add_path "$BUN_INSTALL/bin"
+
+fish_add_path "$HOME/tools/flutter/bin"
+fish_add_path "$HOME/tools/go-tasks"
+
+fish_add_path "$HOME/.local/bin"
+fish_add_path "$HOME/go/bin"
+
+fish_add_path "/usr/local/Cellar/openvpn/2.6.13/sbin"
+
+fish_add_path "/Users/Shared/DBngin/postgresql/17.0/bin"
+
+fish_add_path "$HOME/.config/composer/vendor/bin"
+
+fish_add_path "/usr/local/share/google-cloud-sdk/bin"
+
+set -x XDG_CONFIG_HOME "$HOME/.config"
+set -x ANDROID_HOME "$HOME/Library/Android/sdk"
+
+set -x PNPM_HOME "$HOME/Library/pnpm"
+fish_add_path "$PNPM_HOME"
+
+# Prevent Ctrl-D from closing the shell (equivalent to zsh's setopt ignoreeof)
+set -x fish_exit_on_read_error 0
+bind \cd ""
