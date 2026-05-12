@@ -2,4 +2,4 @@
 # VERSION: 3.0
 SETUVAR __fish_initialized:4300
 SETUVAR fish_greeting:
-SETUVAR fish_user_paths:/home/aecsar/go/bin
+SETUVAR fish_user_paths:/Users/aecsar/Library/pnpm\x1e/usr/local/share/google\x2dcloud\x2dsdk/bin\x1e/Users/aecsar/\x2econfig/composer/vendor/bin\x1e/Users/Shared/DBngin/postgresql/17\x2e0/bin\x1e/Users/aecsar/\x2elocal/bin\x1e/Users/aecsar/tools/flutter/bin\x1e/Users/aecsar/\x2ebun/bin\x1e/Users/aecsar/\x2ebun\x1e/Users/aecsar/go/bin\x1e/home/aecsar/go/bin

@@ -14,9 +14,10 @@
   "ui_font_family": "SF Pro",
   "agent": {
     "default_model": {
+      "effort": "medium",
       "provider": "zed.dev",
-      "model": "claude-haiku-4-5",
-      "enable_thinking": false
+      "model": "gpt-5.3-codex",
+      "enable_thinking": true
     },
     "dock": "left",
     "favorite_models": [],
