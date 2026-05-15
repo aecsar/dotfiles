@@ -214,6 +214,23 @@ return {
         -- ts_ls = {},
         --
         postgres_lsp = {},
+        emmet_language_server = {
+          filetypes = {
+            'html',
+            'css',
+            'scss',
+            'sass',
+            'less',
+            'javascript',
+            'javascriptreact',
+            'typescript',
+            'typescriptreact',
+            'vue',
+            'svelte',
+            'blade',
+            'php',
+          },
+        },
 
         lua_ls = {
           -- cmd = { ... },
@@ -283,6 +300,16 @@ return {
           end,
         },
       }
+
+      -- Explicitly configure emmet_language_server to ensure blade/php filetypes are registered.
+      -- This is needed because mason-lspconfig handlers may not always apply overrides
+      -- when ensure_installed is empty.
+      if servers['emmet_language_server'] then
+        local emmet_config = vim.tbl_deep_extend('force', {}, servers['emmet_language_server'])
+        emmet_config.capabilities = vim.tbl_deep_extend('force', {}, capabilities, emmet_config.capabilities or {})
+        vim.lsp.config('emmet_language_server', emmet_config)
+        vim.lsp.enable('emmet_language_server')
+      end
     end,
   },
 
