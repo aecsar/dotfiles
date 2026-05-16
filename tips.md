@@ -16,6 +16,7 @@ visual mode position
 cd ~/dotfiles
 stow -t ~/.config .
 stow -t ~ git
+stow -t ~ jetbrains
 
 # ln -s ~/dotfiles/.zshrc ~/.zshrc
 # ln -s ~/dotfiles/.gitconfig ~/.gitconfig

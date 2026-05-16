@@ -43,6 +43,7 @@ return {
         svelte = { 'prettier-plugin-svelte' },
         css = { 'prettierd', 'prettier', stop_after_first = true },
         rust = { 'rustfmt' },
+        blade = { 'blade-formatter' },
         -- json = { 'prettierd', 'prettier', stop_after_first = true },
       },
     },
