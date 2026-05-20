@@ -24,6 +24,7 @@ abbr -a k "kubectl"
 abbr -a gotest "go run -mod=mod github.com/rakyll/gotest@latest -v ./..."
 abbr -a pn "pnpm"
 abbr -a pnx "pnpm exec"
+abbr -a bun "pnpm"
 abbr -a pnd "pnpm dlx"
 
 # Environment
