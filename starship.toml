@@ -5,6 +5,7 @@
 # error_symbol = '[✗](bold red) '
 
 [gcloud]
+disabled = true
 # The default format often looks like: 'on [$symbol$account(@$region)(/$project)]($style)'
 # Remove $account to hide email.
-format = 'on [$symbol($region)(\($project\))]($style) '
+# format = 'on [$symbol($region)(\($project\))]($style) '
