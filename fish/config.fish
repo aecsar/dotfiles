@@ -72,3 +72,10 @@ fish_add_path "$PNPM_HOME"
 # Prevent Ctrl-D from closing the shell (equivalent to zsh's setopt ignoreeof)
 set -x fish_exit_on_read_error 0
 bind \cd ""
+
+# pnpm
+set -gx PNPM_HOME "/Users/aecsar/Library/pnpm"
+if not string match -q -- "$PNPM_HOME/bin" $PATH
+  set -gx PATH "$PNPM_HOME/bin" $PATH
+end
+# pnpm end

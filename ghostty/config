@@ -34,7 +34,7 @@ adjust-cursor-thickness = 80%
 cursor-text = 000
 cursor-color = FFF
 
-# window-decoration = none # this causes perf issues
+# window-decoration = none
 
 window-save-state = always
 macos-option-as-alt = left
