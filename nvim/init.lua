@@ -317,7 +317,7 @@ vim.api.nvim_create_autocmd('FileType', {
 vim.env.XDG_CONFIG_HOME = vim.env.HOME .. '/.config'
 
 vim.cmd 'colorscheme rose-pine-main'
--- vim.cmd 'colorscheme tokyonight-night'
+vim.cmd 'colorscheme tokyonight-night'
 -- vim.cmd 'colorscheme catppuccin-mocha'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
