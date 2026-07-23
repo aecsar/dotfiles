@@ -1,197 +1,129 @@
 tap "anomalyco/tap"
 tap "bufbuild/buf"
 tap "charmbracelet/tap"
-tap "largemodgames/spotatui"
+tap "largemodgames/spotatui", "https://github.com/LargeModGames/homebrew-spotatui"
 tap "mongodb/brew"
 tap "nikitabobko/tap"
 tap "pgplex/pgschema"
 tap "potatolabs/git-redate"
 tap "railwaycat/emacsmacport"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Statistics utility to count lines of code
 brew "cloc"
+# Dependency manager for Cocoa projects
 brew "cocoapods"
+# General-purpose scripting language
 brew "php"
+# Dependency Manager for PHP
 brew "composer"
+# GNU File, Shell, and Text utilities
 brew "coreutils"
+# Secure runtime for JavaScript and TypeScript
 brew "deno"
-brew "diff-so-fancy"
+# Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
-brew "flyctl"
+# Monitor a directory for changes and run a shell command
 brew "fswatch"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
 brew "gh"
+# Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Render markdown on the CLI
 brew "glow"
+# Open source programming language to build simple/reliable/efficient software
 brew "go"
-brew "go@1.24"
+# Golang formatter that fixes long lines
 brew "golines"
+# Smarter Dockerfile linter to validate best practices
 brew "hadolint"
+# Post-modern modal text editor
 brew "helix"
-brew "node"
-brew "jupyterlab"
+# Lazier way to manage everything docker
 brew "lazydocker"
+# Simple terminal UI for git commands
 brew "lazygit"
+# Fast and powerful Git hooks manager for any type of projects
 brew "lefthook"
+# Run a Kubernetes cluster locally
 brew "minikube"
+# Simple tool to make locally trusted development certificates
 brew "mkcert"
+# Fast, highly customisable system info script
 brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Small build system for use with gyp or CMake
+brew "ninja"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Open-source, cross-platform JavaScript runtime environment
 brew "node@24"
+# Libraries for security-enabled client and server applications
 brew "nss"
+# Interactive GPU process monitor
+brew "nvtop"
+# Programming language with focus on simplicity, performance and modern systems
+brew "odin"
+# Development kit for the Java programming language
 brew "openjdk"
+# Development kit for the Java programming language
 brew "openjdk@17"
+# Diff Postgres schemas and generating SQL migrations
 brew "pg-schema-diff"
+# Protocol buffers (Google's data interchange format)
 brew "protobuf"
+# Develop and deploy code with zero configuration
 brew "railway"
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Zsh prompt for Astronauts
 brew "spaceship"
+# Generate type safe Go from SQL
 brew "sqlc"
+# Cross-shell prompt for astronauts
 brew "starship"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Terminal multiplexer
 brew "tmux"
+# Parser generator tool
 brew "tree-sitter-cli"
+# Executes a program periodically, showing output fullscreen
 brew "watch"
+# Execute commands when watched files change
 brew "watchexec"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
-brew "anomalyco/tap/opencode"
-brew "bufbuild/buf/buf"
-brew "charmbracelet/tap/crush"
-brew "largemodgames/spotatui/spotatui"
-brew "mongodb/brew/mongodb-community"
-brew "potatolabs/git-redate/git-redate"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode", trusted: true
+# Open source IDE for exploring and testing APIs
 cask "bruno"
-cask "copilot-cli"
+# Launch builds and start simulators from your menu bar
 cask "expo-orbit"
 cask "font-google-sans-code"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-maple-mono-nf"
 cask "font-sauce-code-pro-nerd-font"
+# Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
+# Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# GPU-based terminal emulator
 cask "kitty"
+# Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
-cask "warp"
-vscode "aaron-bond.better-comments"
-vscode "adpyke.codesnap"
-vscode "ahmadawais.shades-of-purple"
-vscode "aliariff.auto-add-brackets"
-vscode "antfu.iconify"
-vscode "arcticicestudio.nord-visual-studio-code"
-vscode "astro-build.astro-vscode"
-vscode "biomejs.biome"
-vscode "bmewburn.vscode-intelephense-client"
-vscode "bradlc.vscode-tailwindcss"
-vscode "bufbuild.vscode-buf"
-vscode "bung87.vscode-gemfile"
-vscode "catppuccin.catppuccin-vsc"
-vscode "catppuccin.catppuccin-vsc-icons"
-vscode "cheeky-pixel.flutter-wings"
-vscode "christian-kohler.npm-intellisense"
-vscode "christian-kohler.path-intellisense"
-vscode "codereviewer14.cyber77-vscode"
-vscode "continue.continue"
-vscode "csalmeida.summercamp"
-vscode "csstools.postcss"
-vscode "cweijan.vscode-mysql-client2"
-vscode "dart-code.dart-code"
-vscode "dart-code.flutter"
-vscode "dbaeumer.vscode-eslint"
-vscode "denoland.vscode-deno"
-vscode "docker.docker"
-vscode "dotenv.dotenv-vscode"
-vscode "eliverlara.andromeda"
-vscode "enkia.tokyo-night"
-vscode "esbenp.prettier-vscode"
-vscode "expo.vscode-expo-theme"
-vscode "expo.vscode-expo-tools"
-vscode "formulahendry.auto-rename-tag"
-vscode "github.copilot-chat"
-vscode "github.github-vscode-theme"
-vscode "github.vscode-github-actions"
-vscode "github.vscode-pull-request-github"
-vscode "golang.go"
-vscode "graphql.vscode-graphql"
-vscode "graphql.vscode-graphql-syntax"
-vscode "gruntfuggly.todo-tree"
-vscode "hermitter.oh-lucy-vscode"
-vscode "humao.rest-client"
-vscode "inlang.vs-code-extension"
-vscode "ionutvmi.path-autocomplete"
-vscode "jairochabr.svg-to-react"
-vscode "jannchie.codetime"
-vscode "keifererikson.nightfox"
-vscode "keksiqc.idx-monospace-theme"
-vscode "laravel.vscode-laravel"
-vscode "m1guelpf.better-pest"
-vscode "maosantaella.night-wolf"
-vscode "mechatroner.rainbow-csv"
-vscode "mehedidracula.php-namespace-resolver"
-vscode "mhutchie.git-graph"
-vscode "miguelsolorio.fluent-icons"
-vscode "mrmlnc.vscode-autoprefixer"
-vscode "ms-azuretools.vscode-containers"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-dotnettools.csdevkit"
-vscode "ms-dotnettools.csharp"
-vscode "ms-dotnettools.vscode-dotnet-runtime"
-vscode "ms-playwright.playwright"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-python.vscode-python-envs"
-vscode "ms-toolsai.jupyter"
-vscode "ms-toolsai.jupyter-keymap"
-vscode "ms-toolsai.jupyter-renderers"
-vscode "ms-toolsai.vscode-jupyter-cell-tags"
-vscode "ms-toolsai.vscode-jupyter-slideshow"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode-remote.remote-ssh"
-vscode "ms-vscode-remote.remote-ssh-edit"
-vscode "ms-vscode-remote.remote-wsl"
-vscode "ms-vscode.makefile-tools"
-vscode "ms-vscode.remote-explorer"
-vscode "ms-vscode.vscode-speech"
-vscode "ms-vsliveshare.vsliveshare"
-vscode "msjsdiag.vscode-react-native"
-vscode "mvllow.rose-pine"
-vscode "mylesmurphy.prettify-ts"
-vscode "neotan.vscode-auto-restart-typescript-eslint-servers"
-vscode "oven.bun-vscode"
-vscode "pkief.material-icon-theme"
-vscode "prisma.prisma"
-vscode "quicktype.quicktype"
-vscode "rangav.vscode-thunder-client"
-vscode "redhat.vscode-yaml"
-vscode "redis.redis-for-vscode"
-vscode "rifi2k.format-html-in-php"
-vscode "ritwickdey.liveserver"
-vscode "roipoussiere.tidal-strudel"
-vscode "rust-lang.rust-analyzer"
-vscode "shopify.ruby-lsp"
-vscode "skyboost.nuxt-3-goto"
-vscode "supermaven.supermaven"
-vscode "svelte.svelte-vscode"
-vscode "tamasfe.even-better-toml"
-vscode "teabyii.ayu"
-vscode "unifiedjs.vscode-mdx"
-vscode "usernamehw.errorlens"
-vscode "vadimcn.vscode-lldb"
-vscode "vercel.turbo-vsc"
-vscode "visualstudiotoolsforunity.vstuc"
-vscode "vitest.explorer"
-vscode "vscodevim.vim"
-vscode "vue.volar"
-vscode "wallabyjs.quokka-vscode"
-vscode "wicked-labs.wvsc-serendipity"
-vscode "ybaumes.highlight-trailing-white-spaces"
-vscode "yoavbls.pretty-ts-errors"
 go "github.com/air-verse/air"
 go "github.com/codesenberg/bombardier"
 go "github.com/bootdotdev/bootdev"
@@ -201,7 +133,6 @@ go "github.com/aecsar/drift"
 go "fyne.io/tools/cmd/fyne"
 go "github.com/aecsar/go-backend"
 go "github.com/nicksnyder/go-i18n/v2/goi18n"
-go "github.com/golangci/golangci-lint/v2/cmd/golangci-lint"
 go "github.com/pressly/goose/v3/cmd/goose"
 go "github.com/haya14busa/goplay/cmd/goplay"
 go "golang.org/x/tools/gopls"
