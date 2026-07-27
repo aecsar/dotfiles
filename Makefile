@@ -6,3 +6,5 @@ install:
 update:
 	brew bundle dump --file=~/.config/Brewfile
 
+fetch-nvim-submod:
+	git submodule update --init --recursive
