@@ -5,6 +5,9 @@ end
 starship init fish | source
 zoxide init fish | source
 
+# platform:linux
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv fish)"
+
 set -U fish_greeting ""
 
 # Aliases
