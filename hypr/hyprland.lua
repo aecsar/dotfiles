@@ -184,6 +184,7 @@ hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
 hl.config({
     dwindle = {
+        force_split = 2,
         preserve_split = true, -- You probably want this
     },
 })
@@ -226,8 +227,8 @@ hl.config({
         kb_options = "",
         kb_rules   = "",
 
-	repeat_delay = 180,
-	repeat_rate = 100,
+        repeat_delay = 180,
+        repeat_rate = 100,
 
         follow_mouse = 1,
 
@@ -235,6 +236,7 @@ hl.config({
 
         touchpad = {
             natural_scroll = true,
+            clickfinger_behavior = true,
         },
     },
 })
