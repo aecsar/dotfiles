@@ -15,7 +15,7 @@
 ------------------
 
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
-hl.monitor({ output = "eDP-2", disabled = true })
+-- hl.monitor({ output = "eDP-2", disabled = true })
 hl.monitor({
     output   = "",
     mode     = "preferred",
@@ -44,7 +44,11 @@ local menu        = "rofi -show drun"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function ()
-  hl.exec_cmd("waybar & hyprpaper")
+  hl.exec_cmd("wl-paste --type text --watch cliphist store")
+  hl.exec_cmd("wl-paste --type image --watch cliphist store")
+  hl.exec_cmd("waybar & hyprpaper & hypridle")
+
+  hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 end)
 
 
@@ -267,6 +271,7 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("~/.config/hypr/scripts/toggle-touchpad.sh"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("cliphist list | rofi -dmenu -display-columns 2 | cliphist decode | wl-copy"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
