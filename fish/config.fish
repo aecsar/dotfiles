@@ -10,6 +10,8 @@ zoxide init fish | source
 
 set -U fish_greeting ""
 
+source "$HOME/.cargo/env.fish"
+
 # Aliases
 abbr -a cna "bun create next-app@latest --tailwind --eslint --ts --app --src-dir --import-alias '~/*' --empty --use-bun"
 abbr -a gaa "git add --all"
