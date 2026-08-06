@@ -14,6 +14,10 @@ visual mode position
 - Link dotfiles to `~/.config
 ```bash
 cd ~/dotfiles
+
+# fetch nvim submodule
+make fetch-nvim-submod
+
 stow -t ~/.config .
 stow -t ~ git
 stow -t ~ jetbrains
