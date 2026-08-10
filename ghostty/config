@@ -14,8 +14,8 @@ font-style-bold = Bold
 font-style-italic = SemiBold Italic
 font-style-bold-italic = Bold Italic
 
-# theme = light:TokyoNight,dark:TokyoNight
-theme = Catppuccin Mocha
+theme = light:TokyoNight,dark:TokyoNight
+# theme = Catppuccin Mocha
 
 # background-opacity = 0.92
 # background-blur-radius = 30
