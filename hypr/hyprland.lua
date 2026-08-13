@@ -274,6 +274,7 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("~/.config/hypr/scripts/toggle-touchpad.sh"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("cliphist list | rofi -dmenu -display-columns 2 | cliphist decode | wl-copy"))
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd([[rofi -show calc -modi calc -no-show-match -no-sort -calc-command "echo -n '{result}' | xclip"]]))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
