@@ -44,6 +44,7 @@ local menu        = "rofi -show drun"
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function ()
+  hl.exec_cmd("brightnessctl set 25%")
   hl.exec_cmd("wl-paste --type text --watch cliphist store")
   hl.exec_cmd("wl-paste --type image --watch cliphist store")
   hl.exec_cmd("waybar & hyprpaper & hypridle & hyprsunset")
@@ -349,6 +350,16 @@ hl.window_rule({
 
     no_focus = true,
 })
+
+-- unscale XWayland
+hl.config({
+  xwayland = {
+    force_zero_scaling = true
+  }
+})
+
+-- toolkit-specific scale
+hl.env("GDK_SCALE", "2")
 
 -- Layer rules also return a handle.
 -- local overlayLayerRule = hl.layer_rule({
