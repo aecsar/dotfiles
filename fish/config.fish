@@ -53,6 +53,7 @@ set -x XDG_CONFIG_HOME "$HOME/.config"
 set -x BUN_INSTALL "$HOME/.bun"
 fish_add_path "$BUN_INSTALL/bin"
 
+fish_add_path "$HOME/tools/zig"
 fish_add_path "$HOME/tools/flutter/bin"
 fish_add_path "$HOME/tools/go-tasks"
 
