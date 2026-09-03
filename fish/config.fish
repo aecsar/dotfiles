@@ -1,3 +1,7 @@
+# The following lines were added by Docker Desktop to add commands to your PATH.
+export PATH="$PATH:/Users/ameer/.docker/bin"
+# End of Docker Desktop section.
+
 if status is-interactive
 # Commands to run in interactive sessions can go here
 end
@@ -26,7 +30,7 @@ abbr -a start-mongo "~/binaries/mongodb-macos-x86_64-8.0.12/bin/mongod --config 
 abbr -a emacs "~/.config/emacs/bin/doom emacs -nw"
 abbr -a tunnel-ngrok "ngrok http \$PORT --url \$NGROK_DOMAIN"
 abbr -a k "kubectl"
-abbr -a gotest "go run -mod=mod github.com/rakyll/gotest@latest -v ./..."
+# abbr -a gotest "go run -mod=mod github.com/rakyll/gotest@latest -v ./..."
 abbr -a pn "pnpm"
 abbr -a pnx "pnpm exec"
 abbr -a bun "pnpm"
@@ -56,6 +60,9 @@ fish_add_path "$BUN_INSTALL/bin"
 fish_add_path "$HOME/tools/zig"
 fish_add_path "$HOME/tools/flutter/bin"
 fish_add_path "$HOME/tools/go-tasks"
+
+fish_add_path "/usr/local/sbin"
+fish_add_path "/opt/local/bin" "/opt/local/sbin"
 
 fish_add_path "$XDG_CONFIG_HOME/composer/vendor/bin"
 
