@@ -1,0 +1,4 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR fish_greeting:
+SETUVAR fish_user_paths:/usr/local/share/google\x2dcloud\x2dsdk/bin\x1e/Users/Shared/DBngin/postgresql/17\x2e0/bin\x1e/Users/ameer/go/bin\x1e/Users/ameer/\x2elocal/bin\x1e/opt/local/bin\x1e/opt/local/sbin\x1e/usr/local/sbin\x1e/Users/ameer/tools/flutter/bin\x1e/Users/ameer/tools/zig
