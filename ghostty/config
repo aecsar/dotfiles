@@ -1,10 +1,10 @@
 # platform:macos
-# font-size = 17
-font-size = 13
-# font-family = "Maple Mono NF"
+font-size = 17
+# font-size = 13
+font-family = "Maple Mono NF"
 
 # platform:fedora, diff font name : https://copr.fedorainfracloud.org/coprs/jhuang6451/nerd-fonts/monitor/
-font-family = "Maple Mono Normal NF"
+# font-family = "Maple Mono Normal NF"
 
 # font-family = SauceCodePro Nerd Font
 # font-family = "JetBrainsMono Nerd Font Mono"
