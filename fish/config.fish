@@ -89,8 +89,11 @@ bind \cd ""
 
 # platform:macos
 # pnpm
-# set -gx PNPM_HOME "/Users/aecsar/Library/pnpm"
-# if not string match -q -- "$PNPM_HOME/bin" $PATH
-#   set -gx PATH "$PNPM_HOME/bin" $PATH
-# end
+set -gx PNPM_HOME '/Users/ameer/Library/pnpm'
+if not string match -q -- "$PNPM_HOME/bin" $PATH
+  set -gx PATH "$PNPM_HOME/bin" $PATH
+end
 # pnpm end
+
+# opencode
+fish_add_path /Users/ameer/.opencode/bin
