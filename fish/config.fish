@@ -39,6 +39,9 @@ abbr -a pnd "pnpm dlx"
 # Environment
 set -x EDITOR nvim
 
+# platform:wsl
+set -x BROWSER "/mnt/c/Windows/explorer.exe"
+
 # bun wrapper function
 function bun
     switch $argv[1]
