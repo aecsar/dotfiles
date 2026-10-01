@@ -40,7 +40,7 @@ abbr -a pnd "pnpm dlx"
 set -x EDITOR nvim
 
 # platform:wsl
-set -x BROWSER "/mnt/c/Windows/explorer.exe"
+# set -x BROWSER "/mnt/c/Windows/explorer.exe"
 
 # bun wrapper function
 function bun
