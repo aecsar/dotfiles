@@ -1,10 +1,6 @@
 [user]
 	name = Moustapha
 	email = hello@moustapha.dev
-; [core]
-; 	pager = diff-so-fancy | less --tabs=4 -RF
-; [interactive]
-; 	diffFilter = diff-so-fancy --patch
 [core]
   pager = delta
 	ignoreCase = false

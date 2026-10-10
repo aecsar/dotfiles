@@ -1,3 +1,0 @@
-set clipboard=unnamedplus
-set clipboard^=ideaput
-map za <Action>(ExpandCollapseToggleAction)
