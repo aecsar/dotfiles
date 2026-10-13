@@ -20,9 +20,6 @@ abbr -a pnd "pnpm dlx"
 # Environment
 set -x EDITOR nvim
 
-# platform:wsl
-# set -x BROWSER "/mnt/c/Windows/explorer.exe"
-
 # Paths
 set -x XDG_CONFIG_HOME "$HOME/.config"
 
