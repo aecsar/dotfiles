@@ -28,6 +28,7 @@ fish_add_path "$HOME/.local/bin"
 
 fish_add_path "$HOME/go/bin"
 fish_add_path "$HOME/.cargo/bin"
+fish_add_path "$HOME/Library/pnpm/bin"
 
 fish_add_path "/usr/local/share/google-cloud-sdk/bin"
 
