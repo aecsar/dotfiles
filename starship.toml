@@ -1,4 +1,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+format = "$all$character"
+right_format = "$git_metrics$package$time"
+
 [gcloud]
 disabled = true
+
+[git_metrics]
+disabled = false
+
+[time]
+disabled = false
+time_format = "%H:%M:%S"
+format = "[$time]($style)"

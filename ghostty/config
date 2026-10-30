@@ -1,13 +1,23 @@
 font-size = 16
 font-family = "Maple Mono NF"
 
-font-style = Medium
-font-style-bold = Bold
-font-style-italic = SemiBold Italic
-font-style-bold-italic = Bold Italic
+font-thicken = true
+# font-style = Medium
+# font-style-bold = Bold
+# font-style-italic = SemiBold Italic
+# font-style-bold-italic = Bold Italic
 
-theme = Rose Pine
-# theme = TokyoNight
+adjust-cursor-thickness = 300%
+
+macos-icon = holographic
+macos-window-buttons = hidden
+macos-titlebar-style = tabs
+window-save-state = always
+macos-option-as-alt = left
+# window-decoration = none
+
+# theme = Rose Pine
+theme = TokyoNight
 
 # background-opacity = 0.92
 # background-blur-radius = 30
@@ -15,16 +25,5 @@ theme = Rose Pine
 window-height = 50
 window-width = 200
 
-macos-titlebar-style = tabs
-# macos-titlebar-style = hidden
-macos-icon = xray
-
-adjust-cursor-thickness = 80%
-
-cursor-text = 000
-cursor-color = FFF
-
-# window-decoration = none
-
-window-save-state = always
-macos-option-as-alt = left
+# cursor-text = 000
+# cursor-color = FFF
