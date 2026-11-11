@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = "$all$character"
-right_format = "$git_metrics$package$time"
+right_format = "$status$git_metrics$package$time"
 
 [gcloud]
 disabled = true
@@ -13,3 +13,11 @@ disabled = false
 disabled = false
 time_format = "%H:%M:%S"
 format = "[$time]($style)"
+
+[status]
+style = ''
+symbol = ''
+success_symbol = ''
+format = '[\[$status\]]($style) '
+map_symbol = true
+disabled = false
