@@ -7,6 +7,10 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
+  "diff_view_style": "split",
   "inlay_hints": {
     "show_background": true,
     "enabled": true
@@ -26,8 +30,8 @@
   "git_panel": {
     "dock": "left"
   },
-  "buffer_font_size": 17.0,
-  "buffer_line_height": "comfortable",
+  "buffer_font_size": 16.0,
+  "buffer_line_height": "standard",
   "preview_tabs": {
     "enabled": false,
   },
@@ -66,6 +70,7 @@
     "dock": "right",
   },
   "project_panel": {
+    "diagnostic_badges": true,
     "auto_fold_dirs": false,
     "indent_guides": {
       "show": "never",
@@ -97,6 +102,7 @@
   "wrap_guides": [100],
   "preferred_line_length": 120,
   "tabs": {
+    "show_diagnostics": "all",
     "git_status": true,
     "file_icons": true,
   },
@@ -107,7 +113,7 @@
     },
     "dock": "bottom",
     "font_family": "JetBrainsMono Nerd Font Mono",
-    "font_size": 16.0,
+    "font_size": 15.0,
     "font_features": {
       "calt": true,
     },
@@ -121,8 +127,8 @@
     "calt": true,
   },
   "theme": {
-    "mode": "system",
-    "light": "Tokyo Night",
-    "dark": "Tokyo Night",
+    "mode": "dark",
+    "light": "Gruvbox Light Soft",
+    "dark": "Catppuccin Macchiato",
   },
 }
